@@ -1,6 +1,6 @@
 # NeblioRestApiSuite.NTP1Api
 
-All URIs are relative to *https://ntp1node.nebl.io:1443*
+All URIs are relative to *https://ntp1node.nebl.io*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -11,6 +11,7 @@ Method | HTTP request | Description
 [**getTokenId**](NTP1Api.md#getTokenId) | **GET** /ntp1/tokenid/{tokensymbol} | Returns the tokenId representing a token
 [**getTokenMetadataOfIssuance**](NTP1Api.md#getTokenMetadataOfIssuance) | **GET** /ntp1/tokenmetadata/{tokenid} | Get Issuance Metadata of Token
 [**getTokenMetadataOfUtxo**](NTP1Api.md#getTokenMetadataOfUtxo) | **GET** /ntp1/tokenmetadata/{tokenid}/{utxo} | Get UTXO Metadata of Token
+[**getTransactionInfo**](NTP1Api.md#getTransactionInfo) | **GET** /ntp1/transactioninfo/{txid} | Information On an NTP1 Transaction
 [**issueToken**](NTP1Api.md#issueToken) | **POST** /ntp1/issue | Builds a transaction that issues a new NTP1 Token
 [**sendToken**](NTP1Api.md#sendToken) | **POST** /ntp1/sendtoken | Builds a transaction that sends an NTP1 Token
 
@@ -251,7 +252,7 @@ No authorization required
 
 Get Issuance Metadata of Token
 
-Returns the metadata associated with a token at time of issuance.  
+Returns the metadata associated with a token at time of issuance. 
 
 ### Example
 ```javascript
@@ -330,6 +331,52 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**GetTokenMetadataResponse**](GetTokenMetadataResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="getTransactionInfo"></a>
+# **getTransactionInfo**
+> GetTransactionInfoResponse getTransactionInfo(txid)
+
+Information On an NTP1 Transaction
+
+Returns detailed information regarding an NTP1 transaction. 
+
+### Example
+```javascript
+var NeblioRestApiSuite = require('neblio_rest_api_suite');
+
+var apiInstance = new NeblioRestApiSuite.NTP1Api();
+
+var txid = "txid_example"; // String | Neblio txid to get information on.
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.getTransactionInfo(txid, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **txid** | **String**| Neblio txid to get information on. | 
+
+### Return type
+
+[**GetTransactionInfoResponse**](GetTransactionInfoResponse.md)
 
 ### Authorization
 
