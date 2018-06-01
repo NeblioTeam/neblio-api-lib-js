@@ -1,6 +1,6 @@
 {
   "name": "neblio_rest_api_suite",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "APIs_for_Interacting_with_NTP1_Tokens__The_Neblio_Blockchain",
   "license": "Unlicense",
   "main": "src/index.js",
