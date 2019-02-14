@@ -1,4 +1,4 @@
-# NeblioRestApiSuite.IssueTokenResponse
+# Neblioapi.IssueTokenResponse
 
 ## Properties
 Name | Type | Description | Notes

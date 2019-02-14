@@ -1,21 +1,26 @@
 {
-  "name": "neblio_rest_api_suite",
-  "version": "1.2.0",
+  "name": "neblioapi",
+  "version": "1.2.1",
   "description": "APIs_for_Interacting_with_NTP1_Tokens__The_Neblio_Blockchain",
   "license": "Unlicense",
   "main": "src/index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --recursive"
+    "test": "mocha --compilers js:babel-core/register --recursive"
   },
   "browser": {
     "fs": false
   },
   "dependencies": {
-    "superagent": "3.5.2"
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "superagent": "3.7.0"
   },
   "devDependencies": {
-    "mocha": "~2.3.4",
-    "sinon": "1.17.3",
-    "expect.js": "~0.3.1"
+    "babel-core": "6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "expect.js": "~0.3.1",
+    "mocha": "^5.2.0",
+    "sinon": "1.17.3"
   }
 }

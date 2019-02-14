@@ -1,4 +1,4 @@
-# NeblioRestApiSuite.NTP1Api
+# Neblioapi.NTP1Api
 
 All URIs are relative to *https://ntp1node.nebl.io*
 
@@ -26,21 +26,17 @@ Broadcasts a signed raw transaction to the network. If successful returns the tx
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.NTP1Api();
-
-var body = new NeblioRestApiSuite.BroadcastTxRequest(); // BroadcastTxRequest | Object representing a transaction to broadcast
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Neblioapi.NTP1Api();
+let body = new Neblioapi.BroadcastTxRequest(); // BroadcastTxRequest | Object representing a transaction to broadcast
+apiInstance.broadcastTx(body, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.broadcastTx(body, callback);
+});
 ```
 
 ### Parameters
@@ -72,21 +68,17 @@ Builds an unsigned raw transaction that burns an NTP1 token on the Neblio blockc
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.NTP1Api();
-
-var body = new NeblioRestApiSuite.BurnTokenRequest(); // BurnTokenRequest | Object representing the token to be burned
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Neblioapi.NTP1Api();
+let body = new Neblioapi.BurnTokenRequest(); // BurnTokenRequest | Object representing the token to be burned
+apiInstance.burnToken(body, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.burnToken(body, callback);
+});
 ```
 
 ### Parameters
@@ -118,21 +110,17 @@ Returns both NEBL and NTP1 token UTXOs held at the given address.
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.NTP1Api();
-
-var address = "address_example"; // String | Neblio Address to get information on.
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Neblioapi.NTP1Api();
+let address = "address_example"; // String | Neblio Address to get information on.
+apiInstance.getAddressInfo(address, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getAddressInfo(address, callback);
+});
 ```
 
 ### Parameters
@@ -151,7 +139,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 <a name="getTokenHolders"></a>
@@ -164,21 +152,17 @@ Returns the the the addresses holding a token and how many tokens are held
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.NTP1Api();
-
-var tokenid = "tokenid_example"; // String | TokenId to request metadata for
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Neblioapi.NTP1Api();
+let tokenid = "tokenid_example"; // String | TokenId to request metadata for
+apiInstance.getTokenHolders(tokenid, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getTokenHolders(tokenid, callback);
+});
 ```
 
 ### Parameters
@@ -197,7 +181,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 <a name="getTokenId"></a>
@@ -210,21 +194,17 @@ Translates a token symbol to a tokenId if a token exists with that symbol on the
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.NTP1Api();
-
-var tokensymbol = "tokensymbol_example"; // String | Token symbol
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Neblioapi.NTP1Api();
+let tokensymbol = "tokensymbol_example"; // String | Token symbol
+apiInstance.getTokenId(tokensymbol, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getTokenId(tokensymbol, callback);
+});
 ```
 
 ### Parameters
@@ -243,7 +223,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 <a name="getTokenMetadataOfIssuance"></a>
@@ -256,21 +236,17 @@ Returns the metadata associated with a token at time of issuance.
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.NTP1Api();
-
-var tokenid = "tokenid_example"; // String | TokenId to request metadata for
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Neblioapi.NTP1Api();
+let tokenid = "tokenid_example"; // String | TokenId to request metadata for
+apiInstance.getTokenMetadataOfIssuance(tokenid, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getTokenMetadataOfIssuance(tokenid, callback);
+});
 ```
 
 ### Parameters
@@ -289,7 +265,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 <a name="getTokenMetadataOfUtxo"></a>
@@ -302,23 +278,18 @@ Returns the metadata associated with a token for that specific utxo instead of t
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.NTP1Api();
-
-var tokenid = "tokenid_example"; // String | TokenId to request metadata for
-
-var utxo = "utxo_example"; // String | Specific UTXO to request metadata for
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Neblioapi.NTP1Api();
+let tokenid = "tokenid_example"; // String | TokenId to request metadata for
+let utxo = "utxo_example"; // String | Specific UTXO to request metadata for
+apiInstance.getTokenMetadataOfUtxo(tokenid, utxo, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getTokenMetadataOfUtxo(tokenid, utxo, callback);
+});
 ```
 
 ### Parameters
@@ -338,7 +309,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 <a name="getTransactionInfo"></a>
@@ -351,21 +322,17 @@ Returns detailed information regarding an NTP1 transaction.
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.NTP1Api();
-
-var txid = "txid_example"; // String | Neblio txid to get information on.
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Neblioapi.NTP1Api();
+let txid = "txid_example"; // String | Neblio txid to get information on.
+apiInstance.getTransactionInfo(txid, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getTransactionInfo(txid, callback);
+});
 ```
 
 ### Parameters
@@ -384,7 +351,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 <a name="issueToken"></a>
@@ -397,21 +364,17 @@ Builds an unsigned raw transaction that issues a new NTP1 token on the Neblio bl
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.NTP1Api();
-
-var body = new NeblioRestApiSuite.IssueTokenRequest(); // IssueTokenRequest | Object representing the token to be created
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Neblioapi.NTP1Api();
+let body = new Neblioapi.IssueTokenRequest(); // IssueTokenRequest | Object representing the token to be created
+apiInstance.issueToken(body, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.issueToken(body, callback);
+});
 ```
 
 ### Parameters
@@ -443,21 +406,17 @@ Builds an unsigned raw transaction that sends an NTP1 token on the Neblio blockc
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.NTP1Api();
-
-var body = new NeblioRestApiSuite.SendTokenRequest(); // SendTokenRequest | Object representing the token to be sent
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Neblioapi.NTP1Api();
+let body = new Neblioapi.SendTokenRequest(); // SendTokenRequest | Object representing the token to be sent
+apiInstance.sendToken(body, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.sendToken(body, callback);
+});
 ```
 
 ### Parameters

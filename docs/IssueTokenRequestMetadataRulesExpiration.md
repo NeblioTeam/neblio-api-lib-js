@@ -1,4 +1,4 @@
-# NeblioRestApiSuite.IssueTokenRequestMetadataRulesExpiration
+# Neblioapi.IssueTokenRequestMetadataRulesExpiration
 
 ## Properties
 Name | Type | Description | Notes

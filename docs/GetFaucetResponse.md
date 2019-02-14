@@ -1,4 +1,4 @@
-# NeblioRestApiSuite.GetFaucetResponse
+# Neblioapi.GetFaucetResponse
 
 ## Properties
 Name | Type | Description | Notes

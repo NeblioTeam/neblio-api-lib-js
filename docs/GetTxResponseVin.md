@@ -1,14 +1,14 @@
-# NeblioRestApiSuite.GetTxResponseVin
+# Neblioapi.GetTxResponseVin
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**txid** | **String** | TXID of the input | [optional] 
-**vout** | **Number** | output index | [optional] 
-**scriptSig** | [**GetTransactionInfoResponseScriptSig**](GetTransactionInfoResponseScriptSig.md) |  | [optional] 
 **sequence** | **Number** |  | [optional] 
-**value** | **Number** | Value of input in NEBL | [optional] 
+**scriptSig** | [**GetTransactionInfoResponseScriptSig**](GetTransactionInfoResponseScriptSig.md) |  | [optional] 
 **valueSat** | **Number** | Value of input in NEBL satoshi | [optional] 
+**txid** | **String** | TXID of the input | [optional] 
+**value** | **Number** | Value of input in NEBL | [optional] 
 **n** | **Number** | input index | [optional] 
+**vout** | **Number** | output index | [optional] 
 
 

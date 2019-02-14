@@ -1,4 +1,4 @@
-# NeblioRestApiSuite.InsightApi
+# Neblioapi.InsightApi
 
 All URIs are relative to *https://ntp1node.nebl.io*
 
@@ -30,21 +30,17 @@ Returns NEBL address object containing information on a specific address
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.InsightApi();
-
-var address = "address_example"; // String | Address
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Neblioapi.InsightApi();
+let address = "address_example"; // String | Address
+apiInstance.getAddress(address, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getAddress(address, callback);
+});
 ```
 
 ### Parameters
@@ -63,12 +59,12 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 <a name="getAddressBalance"></a>
 # **getAddressBalance**
-> GetAddressBalanceResponse getAddressBalance(address)
+> Number getAddressBalance(address)
 
 Returns address balance in sats
 
@@ -76,21 +72,17 @@ Returns NEBL address balance in satoshis
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.InsightApi();
-
-var address = "address_example"; // String | Address
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Neblioapi.InsightApi();
+let address = "address_example"; // String | Address
+apiInstance.getAddressBalance(address, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getAddressBalance(address, callback);
+});
 ```
 
 ### Parameters
@@ -101,7 +93,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetAddressBalanceResponse**](GetAddressBalanceResponse.md)
+**Number**
 
 ### Authorization
 
@@ -109,12 +101,12 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 <a name="getAddressTotalReceived"></a>
 # **getAddressTotalReceived**
-> GetAddressTotalReceivedResponse getAddressTotalReceived(address)
+> Number getAddressTotalReceived(address)
 
 Returns total received by address in sats
 
@@ -122,21 +114,17 @@ Returns total NEBL received by address in satoshis
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.InsightApi();
-
-var address = "address_example"; // String | Address
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Neblioapi.InsightApi();
+let address = "address_example"; // String | Address
+apiInstance.getAddressTotalReceived(address, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getAddressTotalReceived(address, callback);
+});
 ```
 
 ### Parameters
@@ -147,7 +135,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetAddressTotalReceivedResponse**](GetAddressTotalReceivedResponse.md)
+**Number**
 
 ### Authorization
 
@@ -155,12 +143,12 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 <a name="getAddressTotalSent"></a>
 # **getAddressTotalSent**
-> GetAddressTotalSentResponse getAddressTotalSent(address)
+> Number getAddressTotalSent(address)
 
 Returns total sent by address in sats
 
@@ -168,21 +156,17 @@ Returns total NEBL sent by address in satoshis
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.InsightApi();
-
-var address = "address_example"; // String | Address
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Neblioapi.InsightApi();
+let address = "address_example"; // String | Address
+apiInstance.getAddressTotalSent(address, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getAddressTotalSent(address, callback);
+});
 ```
 
 ### Parameters
@@ -193,7 +177,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetAddressTotalSentResponse**](GetAddressTotalSentResponse.md)
+**Number**
 
 ### Authorization
 
@@ -201,12 +185,12 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 <a name="getAddressUnconfirmedBalance"></a>
 # **getAddressUnconfirmedBalance**
-> GetAddressUnconfirmedBalanceResponse getAddressUnconfirmedBalance(address)
+> Number getAddressUnconfirmedBalance(address)
 
 Returns address unconfirmed balance in sats
 
@@ -214,21 +198,17 @@ Returns NEBL address unconfirmed balance in satoshis
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.InsightApi();
-
-var address = "address_example"; // String | Address
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Neblioapi.InsightApi();
+let address = "address_example"; // String | Address
+apiInstance.getAddressUnconfirmedBalance(address, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getAddressUnconfirmedBalance(address, callback);
+});
 ```
 
 ### Parameters
@@ -239,7 +219,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetAddressUnconfirmedBalanceResponse**](GetAddressUnconfirmedBalanceResponse.md)
+**Number**
 
 ### Authorization
 
@@ -247,12 +227,12 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 <a name="getAddressUtxos"></a>
 # **getAddressUtxos**
-> GetAddressUtxosResponse getAddressUtxos(address)
+> [Object] getAddressUtxos(address)
 
 Returns all UTXOs at a given address
 
@@ -260,21 +240,17 @@ Returns information on each Unspent Transaction Output contained at an address
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.InsightApi();
-
-var address = "address_example"; // String | Address
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Neblioapi.InsightApi();
+let address = "address_example"; // String | Address
+apiInstance.getAddressUtxos(address, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getAddressUtxos(address, callback);
+});
 ```
 
 ### Parameters
@@ -285,7 +261,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetAddressUtxosResponse**](GetAddressUtxosResponse.md)
+**[Object]**
 
 ### Authorization
 
@@ -293,7 +269,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 <a name="getBlock"></a>
@@ -306,21 +282,17 @@ Returns blockchain data for a given block based upon the block hash
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.InsightApi();
-
-var blockhash = "blockhash_example"; // String | Block Hash
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Neblioapi.InsightApi();
+let blockhash = "blockhash_example"; // String | Block Hash
+apiInstance.getBlock(blockhash, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getBlock(blockhash, callback);
+});
 ```
 
 ### Parameters
@@ -339,7 +311,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 <a name="getBlockIndex"></a>
@@ -352,21 +324,17 @@ Returns the block hash of a block at a given block index
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.InsightApi();
-
-var blockindex = 8.14; // Number | Block Index
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Neblioapi.InsightApi();
+let blockindex = 3.4; // Number | Block Index
+apiInstance.getBlockIndex(blockindex, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getBlockIndex(blockindex, callback);
+});
 ```
 
 ### Parameters
@@ -385,7 +353,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 <a name="getRawTx"></a>
@@ -398,21 +366,17 @@ Returns raw transaction hex representing a NEBL transaction
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.InsightApi();
-
-var txid = "txid_example"; // String | Transaction ID
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Neblioapi.InsightApi();
+let txid = "txid_example"; // String | Transaction ID
+apiInstance.getRawTx(txid, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getRawTx(txid, callback);
+});
 ```
 
 ### Parameters
@@ -431,35 +395,32 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 <a name="getStatus"></a>
 # **getStatus**
-> GetStatusResponse getStatus(opts)
+> Object getStatus(opts)
 
 Utility API for calling several blockchain node functions
 
-tility API for calling several blockchain node functions - getInfo, getDifficulty, getBestBlockHash, getLastBlockHash
+Utility API for calling several blockchain node functions - getInfo, getDifficulty, getBestBlockHash, getLastBlockHash
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.InsightApi();
-
-var opts = { 
+let apiInstance = new Neblioapi.InsightApi();
+let opts = {
   'q': "q_example" // String | Function to call, getInfo, getDifficulty, getBestBlockHash, or getLastBlockHash
 };
-
-var callback = function(error, data, response) {
+apiInstance.getStatus(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getStatus(opts, callback);
+});
 ```
 
 ### Parameters
@@ -470,7 +431,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetStatusResponse**](GetStatusResponse.md)
+**Object**
 
 ### Authorization
 
@@ -478,7 +439,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 <a name="getSync"></a>
@@ -491,18 +452,16 @@ Returns information on the node&#39;s sync progress
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.InsightApi();
-
-var callback = function(error, data, response) {
+let apiInstance = new Neblioapi.InsightApi();
+apiInstance.getSync((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getSync(callback);
+});
 ```
 
 ### Parameters
@@ -518,7 +477,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 <a name="getTx"></a>
@@ -531,21 +490,17 @@ Returns NEBL transaction object representing a NEBL transaction
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.InsightApi();
-
-var txid = "txid_example"; // String | Transaction ID
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Neblioapi.InsightApi();
+let txid = "txid_example"; // String | Transaction ID
+apiInstance.getTx(txid, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getTx(txid, callback);
+});
 ```
 
 ### Parameters
@@ -564,7 +519,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 <a name="getTxs"></a>
@@ -577,24 +532,21 @@ Returns all transactions by block or address
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.InsightApi();
-
-var opts = { 
+let apiInstance = new Neblioapi.InsightApi();
+let opts = {
   'address': "address_example", // String | Address
   'block': "block_example", // String | Block Hash
-  'page': 8.14 // Number | Page number to display
+  'pageNum': 3.4 // Number | Page number to display
 };
-
-var callback = function(error, data, response) {
+apiInstance.getTxs(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getTxs(opts, callback);
+});
 ```
 
 ### Parameters
@@ -603,7 +555,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **address** | **String**| Address | [optional] 
  **block** | **String**| Block Hash | [optional] 
- **page** | **Number**| Page number to display | [optional] 
+ **pageNum** | **Number**| Page number to display | [optional] 
 
 ### Return type
 
@@ -615,7 +567,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 <a name="sendTx"></a>
@@ -628,21 +580,17 @@ Broadcasts a signed raw transaction to the network. If successful returns the tx
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.InsightApi();
-
-var body = new NeblioRestApiSuite.SendTxRequest(); // SendTxRequest | Object representing a transaction to broadcast
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Neblioapi.InsightApi();
+let body = new Neblioapi.SendTxRequest(); // SendTxRequest | Object representing a transaction to broadcast
+apiInstance.sendTx(body, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.sendTx(body, callback);
+});
 ```
 
 ### Parameters

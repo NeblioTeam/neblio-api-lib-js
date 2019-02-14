@@ -1,4 +1,4 @@
-# NeblioRestApiSuite.TestnetFaucetApi
+# Neblioapi.TestnetFaucetApi
 
 All URIs are relative to *https://ntp1node.nebl.io*
 
@@ -17,24 +17,20 @@ Withdraw testnet NEBL to your Neblio Testnet address. By default amount is 15000
 
 ### Example
 ```javascript
-var NeblioRestApiSuite = require('neblio_rest_api_suite');
+import Neblioapi from 'neblioapi';
 
-var apiInstance = new NeblioRestApiSuite.TestnetFaucetApi();
-
-var address = "address_example"; // String | Your Neblio Testnet Address
-
-var opts = { 
-  'amount': 8.14 // Number | Amount of NEBL to withdrawal in satoshis
+let apiInstance = new Neblioapi.TestnetFaucetApi();
+let address = "address_example"; // String | Your Neblio Testnet Address
+let opts = {
+  'amount': 3.4 // Number | Amount of NEBL to withdrawal in satoshis
 };
-
-var callback = function(error, data, response) {
+apiInstance.testnetGetFaucet(address, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.testnetGetFaucet(address, opts, callback);
+});
 ```
 
 ### Parameters
@@ -54,6 +50,6 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 

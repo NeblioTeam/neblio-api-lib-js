@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new Neblioapi.GetTokenHoldersResponseHolders();
+    instance = new Neblioapi.IssueTokenRequestTransfer();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,22 +47,22 @@
       object[property] = value;
   }
 
-  describe('GetTokenHoldersResponseHolders', function() {
-    it('should create an instance of GetTokenHoldersResponseHolders', function() {
-      // uncomment below and update the code to test GetTokenHoldersResponseHolders
-      //var instane = new Neblioapi.GetTokenHoldersResponseHolders();
-      //expect(instance).to.be.a(Neblioapi.GetTokenHoldersResponseHolders);
+  describe('IssueTokenRequestTransfer', function() {
+    it('should create an instance of IssueTokenRequestTransfer', function() {
+      // uncomment below and update the code to test IssueTokenRequestTransfer
+      //var instane = new Neblioapi.IssueTokenRequestTransfer();
+      //expect(instance).to.be.a(Neblioapi.IssueTokenRequestTransfer);
     });
 
     it('should have the property amount (base name: "amount")', function() {
       // uncomment below and update the code to test the property amount
-      //var instane = new Neblioapi.GetTokenHoldersResponseHolders();
+      //var instane = new Neblioapi.IssueTokenRequestTransfer();
       //expect(instance).to.be();
     });
 
     it('should have the property address (base name: "address")', function() {
       // uncomment below and update the code to test the property address
-      //var instane = new Neblioapi.GetTokenHoldersResponseHolders();
+      //var instane = new Neblioapi.IssueTokenRequestTransfer();
       //expect(instance).to.be();
     });
 

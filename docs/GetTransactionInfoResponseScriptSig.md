@@ -1,4 +1,4 @@
-# NeblioRestApiSuite.GetTransactionInfoResponseScriptSig
+# Neblioapi.GetTransactionInfoResponseScriptSig
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# NeblioRestApiSuite.IssueTokenRequestFlags
+# Neblioapi.IssueTokenRequestFlags
 
 ## Properties
 Name | Type | Description | Notes

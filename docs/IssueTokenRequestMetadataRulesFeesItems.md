@@ -1,4 +1,4 @@
-# NeblioRestApiSuite.IssueTokenRequestMetadataRulesFeesItems
+# Neblioapi.IssueTokenRequestMetadataRulesFeesItems
 
 ## Properties
 Name | Type | Description | Notes

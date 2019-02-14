@@ -1,4 +1,4 @@
-# NeblioRestApiSuite.GetAddressInfoResponse
+# Neblioapi.GetAddressInfoResponse
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# NeblioRestApiSuite.GetTransactionInfoResponse
+# Neblioapi.GetTransactionInfoResponse
 
 ## Properties
 Name | Type | Description | Notes

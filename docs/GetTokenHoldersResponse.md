@@ -1,4 +1,4 @@
-# NeblioRestApiSuite.GetTokenHoldersResponse
+# Neblioapi.GetTokenHoldersResponse
 
 ## Properties
 Name | Type | Description | Notes

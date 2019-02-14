@@ -1,4 +1,4 @@
-# NeblioRestApiSuite.Error
+# Neblioapi.Error
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# NeblioRestApiSuite.GetSyncResponse
+# Neblioapi.GetSyncResponse
 
 ## Properties
 Name | Type | Description | Notes

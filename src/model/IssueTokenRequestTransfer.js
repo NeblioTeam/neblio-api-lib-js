@@ -14,18 +14,18 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The BurnTokenRequestBurn model module.
- * @module model/BurnTokenRequestBurn
+ * The IssueTokenRequestTransfer model module.
+ * @module model/IssueTokenRequestTransfer
  * @version 1.2.1
  */
-class BurnTokenRequestBurn {
+class IssueTokenRequestTransfer {
     /**
-     * Constructs a new <code>BurnTokenRequestBurn</code>.
-     * @alias module:model/BurnTokenRequestBurn
+     * Constructs a new <code>IssueTokenRequestTransfer</code>.
+     * @alias module:model/IssueTokenRequestTransfer
      */
     constructor() { 
         
-        BurnTokenRequestBurn.initialize(this);
+        IssueTokenRequestTransfer.initialize(this);
     }
 
     /**
@@ -37,21 +37,21 @@ class BurnTokenRequestBurn {
     }
 
     /**
-     * Constructs a <code>BurnTokenRequestBurn</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>IssueTokenRequestTransfer</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/BurnTokenRequestBurn} obj Optional instance to populate.
-     * @return {module:model/BurnTokenRequestBurn} The populated <code>BurnTokenRequestBurn</code> instance.
+     * @param {module:model/IssueTokenRequestTransfer} obj Optional instance to populate.
+     * @return {module:model/IssueTokenRequestTransfer} The populated <code>IssueTokenRequestTransfer</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new BurnTokenRequestBurn();
+            obj = obj || new IssueTokenRequestTransfer();
 
             if (data.hasOwnProperty('amount')) {
                 obj['amount'] = ApiClient.convertToType(data['amount'], 'Number');
             }
-            if (data.hasOwnProperty('tokenId')) {
-                obj['tokenId'] = ApiClient.convertToType(data['tokenId'], 'String');
+            if (data.hasOwnProperty('address')) {
+                obj['address'] = ApiClient.convertToType(data['address'], 'String');
             }
         }
         return obj;
@@ -61,21 +61,20 @@ class BurnTokenRequestBurn {
 }
 
 /**
- * Amount of tokens to burn
  * @member {Number} amount
  */
-BurnTokenRequestBurn.prototype['amount'] = undefined;
+IssueTokenRequestTransfer.prototype['amount'] = undefined;
 
 /**
- * Unique token id we are burning
- * @member {String} tokenId
+ * Address to send the amount of issued tokens to
+ * @member {String} address
  */
-BurnTokenRequestBurn.prototype['tokenId'] = undefined;
+IssueTokenRequestTransfer.prototype['address'] = undefined;
 
 
 
 
 
 
-export default BurnTokenRequestBurn;
+export default IssueTokenRequestTransfer;
 

@@ -1,4 +1,4 @@
-# NeblioRestApiSuite.BroadcastTxRequest
+# Neblioapi.BroadcastTxRequest
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# NeblioRestApiSuite.BurnTokenRequestBurn
+# Neblioapi.BurnTokenRequestBurn
 
 ## Properties
 Name | Type | Description | Notes

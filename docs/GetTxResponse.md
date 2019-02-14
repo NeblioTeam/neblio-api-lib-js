@@ -1,4 +1,4 @@
-# NeblioRestApiSuite.GetTxResponse
+# Neblioapi.GetTxResponse
 
 ## Properties
 Name | Type | Description | Notes

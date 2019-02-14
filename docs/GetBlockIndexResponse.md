@@ -1,4 +1,4 @@
-# NeblioRestApiSuite.GetBlockIndexResponse
+# Neblioapi.GetBlockIndexResponse
 
 ## Properties
 Name | Type | Description | Notes
