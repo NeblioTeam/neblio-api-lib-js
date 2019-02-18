@@ -58,15 +58,15 @@ export default class TestnetNTP1Api {
     /**
      * Broadcasts a signed raw transaction to the network
      * Broadcasts a signed raw transaction to the network. If successful returns the txid of the broadcast trasnaction. 
-     * @param {module:model/BroadcastTxRequest} body Object representing a transaction to broadcast
+     * @param {module:model/BroadcastTxRequest} broadcastTxRequest Object representing a transaction to broadcast
      * @param {module:api/TestnetNTP1Api~testnetBroadcastTxCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/BroadcastTxResponse}
      */
-    testnetBroadcastTx(body, callback) {
-      let postBody = body;
-      // verify the required parameter 'body' is set
-      if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling testnetBroadcastTx");
+    testnetBroadcastTx(broadcastTxRequest, callback) {
+      let postBody = broadcastTxRequest;
+      // verify the required parameter 'broadcastTxRequest' is set
+      if (broadcastTxRequest === undefined || broadcastTxRequest === null) {
+        throw new Error("Missing the required parameter 'broadcastTxRequest' when calling testnetBroadcastTx");
       }
 
       let pathParams = {
@@ -100,15 +100,15 @@ export default class TestnetNTP1Api {
     /**
      * Builds a transaction that burns an NTP1 Token
      * Builds an unsigned raw transaction that burns an NTP1 token on the Neblio blockchain. 
-     * @param {module:model/BurnTokenRequest} body Object representing the token to be burned
+     * @param {module:model/BurnTokenRequest} burnTokenRequest Object representing the token to be burned
      * @param {module:api/TestnetNTP1Api~testnetBurnTokenCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/BurnTokenResponse}
      */
-    testnetBurnToken(body, callback) {
-      let postBody = body;
-      // verify the required parameter 'body' is set
-      if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling testnetBurnToken");
+    testnetBurnToken(burnTokenRequest, callback) {
+      let postBody = burnTokenRequest;
+      // verify the required parameter 'burnTokenRequest' is set
+      if (burnTokenRequest === undefined || burnTokenRequest === null) {
+        throw new Error("Missing the required parameter 'burnTokenRequest' when calling testnetBurnToken");
       }
 
       let pathParams = {
@@ -406,15 +406,15 @@ export default class TestnetNTP1Api {
     /**
      * Builds a transaction that issues a new NTP1 Token
      * Builds an unsigned raw transaction that issues a new NTP1 token on the Neblio blockchain. 
-     * @param {module:model/IssueTokenRequest} body Object representing the token to be created
+     * @param {module:model/IssueTokenRequest} issueTokenRequest Object representing the token to be created
      * @param {module:api/TestnetNTP1Api~testnetIssueTokenCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/IssueTokenResponse}
      */
-    testnetIssueToken(body, callback) {
-      let postBody = body;
-      // verify the required parameter 'body' is set
-      if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling testnetIssueToken");
+    testnetIssueToken(issueTokenRequest, callback) {
+      let postBody = issueTokenRequest;
+      // verify the required parameter 'issueTokenRequest' is set
+      if (issueTokenRequest === undefined || issueTokenRequest === null) {
+        throw new Error("Missing the required parameter 'issueTokenRequest' when calling testnetIssueToken");
       }
 
       let pathParams = {
@@ -448,15 +448,15 @@ export default class TestnetNTP1Api {
     /**
      * Builds a transaction that sends an NTP1 Token
      * Builds an unsigned raw transaction that sends an NTP1 token on the Neblio blockchain. 
-     * @param {module:model/SendTokenRequest} body Object representing the token to be sent
+     * @param {module:model/SendTokenRequest} sendTokenRequest Object representing the token to be sent
      * @param {module:api/TestnetNTP1Api~testnetSendTokenCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/SendTokenResponse}
      */
-    testnetSendToken(body, callback) {
-      let postBody = body;
-      // verify the required parameter 'body' is set
-      if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling testnetSendToken");
+    testnetSendToken(sendTokenRequest, callback) {
+      let postBody = sendTokenRequest;
+      // verify the required parameter 'sendTokenRequest' is set
+      if (sendTokenRequest === undefined || sendTokenRequest === null) {
+        throw new Error("Missing the required parameter 'sendTokenRequest' when calling testnetSendToken");
       }
 
       let pathParams = {

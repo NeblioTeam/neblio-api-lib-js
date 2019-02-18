@@ -47,17 +47,17 @@ class IssueTokenRequestMetadataUrls {
         if (data) {
             obj = obj || new IssueTokenRequestMetadataUrls();
 
-            if (data.hasOwnProperty('dataHash')) {
-                obj['dataHash'] = ApiClient.convertToType(data['dataHash'], 'String');
-            }
             if (data.hasOwnProperty('name')) {
                 obj['name'] = ApiClient.convertToType(data['name'], 'String');
+            }
+            if (data.hasOwnProperty('url')) {
+                obj['url'] = ApiClient.convertToType(data['url'], 'String');
             }
             if (data.hasOwnProperty('mimeType')) {
                 obj['mimeType'] = ApiClient.convertToType(data['mimeType'], 'String');
             }
-            if (data.hasOwnProperty('url')) {
-                obj['url'] = ApiClient.convertToType(data['url'], 'String');
+            if (data.hasOwnProperty('dataHash')) {
+                obj['dataHash'] = ApiClient.convertToType(data['dataHash'], 'String');
             }
         }
         return obj;
@@ -67,16 +67,16 @@ class IssueTokenRequestMetadataUrls {
 }
 
 /**
- * Hash of data at the URL, used for verification
- * @member {String} dataHash
- */
-IssueTokenRequestMetadataUrls.prototype['dataHash'] = undefined;
-
-/**
  * Name of the URL
  * @member {String} name
  */
 IssueTokenRequestMetadataUrls.prototype['name'] = undefined;
+
+/**
+ * Actual URL
+ * @member {String} url
+ */
+IssueTokenRequestMetadataUrls.prototype['url'] = undefined;
 
 /**
  * mimeType of URL content
@@ -85,10 +85,10 @@ IssueTokenRequestMetadataUrls.prototype['name'] = undefined;
 IssueTokenRequestMetadataUrls.prototype['mimeType'] = undefined;
 
 /**
- * Actual URL
- * @member {String} url
+ * Hash of data at the URL, used for verification
+ * @member {String} dataHash
  */
-IssueTokenRequestMetadataUrls.prototype['url'] = undefined;
+IssueTokenRequestMetadataUrls.prototype['dataHash'] = undefined;
 
 
 

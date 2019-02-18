@@ -47,17 +47,17 @@ class IssueTokenRequestMetadataEncryptions {
         if (data) {
             obj = obj || new IssueTokenRequestMetadataEncryptions();
 
-            if (data.hasOwnProperty('format')) {
-                obj['format'] = ApiClient.convertToType(data['format'], 'String');
-            }
-            if (data.hasOwnProperty('type')) {
-                obj['type'] = ApiClient.convertToType(data['type'], 'String');
-            }
             if (data.hasOwnProperty('key')) {
                 obj['key'] = ApiClient.convertToType(data['key'], 'String');
             }
             if (data.hasOwnProperty('pubkey')) {
                 obj['pubkey'] = ApiClient.convertToType(data['pubkey'], 'String');
+            }
+            if (data.hasOwnProperty('format')) {
+                obj['format'] = ApiClient.convertToType(data['format'], 'String');
+            }
+            if (data.hasOwnProperty('type')) {
+                obj['type'] = ApiClient.convertToType(data['type'], 'String');
             }
         }
         return obj;
@@ -65,18 +65,6 @@ class IssueTokenRequestMetadataEncryptions {
 
 
 }
-
-/**
- * key format (pem or der)
- * @member {String} format
- */
-IssueTokenRequestMetadataEncryptions.prototype['format'] = undefined;
-
-/**
- * pkcs1 or pkcs8
- * @member {String} type
- */
-IssueTokenRequestMetadataEncryptions.prototype['type'] = undefined;
 
 /**
  * userData key to encrypt
@@ -89,6 +77,18 @@ IssueTokenRequestMetadataEncryptions.prototype['key'] = undefined;
  * @member {String} pubkey
  */
 IssueTokenRequestMetadataEncryptions.prototype['pubkey'] = undefined;
+
+/**
+ * key format (pem or der)
+ * @member {String} format
+ */
+IssueTokenRequestMetadataEncryptions.prototype['format'] = undefined;
+
+/**
+ * pkcs1 or pkcs8
+ * @member {String} type
+ */
+IssueTokenRequestMetadataEncryptions.prototype['type'] = undefined;
 
 
 

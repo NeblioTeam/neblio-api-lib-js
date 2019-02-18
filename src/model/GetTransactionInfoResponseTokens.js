@@ -47,23 +47,23 @@ class GetTransactionInfoResponseTokens {
         if (data) {
             obj = obj || new GetTransactionInfoResponseTokens();
 
-            if (data.hasOwnProperty('amount')) {
-                obj['amount'] = ApiClient.convertToType(data['amount'], 'Number');
-            }
-            if (data.hasOwnProperty('aggregationPolicy')) {
-                obj['aggregationPolicy'] = ApiClient.convertToType(data['aggregationPolicy'], 'String');
-            }
             if (data.hasOwnProperty('tokenId')) {
                 obj['tokenId'] = ApiClient.convertToType(data['tokenId'], 'String');
             }
-            if (data.hasOwnProperty('lockStatus')) {
-                obj['lockStatus'] = ApiClient.convertToType(data['lockStatus'], 'Boolean');
+            if (data.hasOwnProperty('amount')) {
+                obj['amount'] = ApiClient.convertToType(data['amount'], 'Number');
             }
             if (data.hasOwnProperty('issueTxid')) {
                 obj['issueTxid'] = ApiClient.convertToType(data['issueTxid'], 'String');
             }
             if (data.hasOwnProperty('divisibility')) {
                 obj['divisibility'] = ApiClient.convertToType(data['divisibility'], 'Number');
+            }
+            if (data.hasOwnProperty('lockStatus')) {
+                obj['lockStatus'] = ApiClient.convertToType(data['lockStatus'], 'Boolean');
+            }
+            if (data.hasOwnProperty('aggregationPolicy')) {
+                obj['aggregationPolicy'] = ApiClient.convertToType(data['aggregationPolicy'], 'String');
             }
         }
         return obj;
@@ -73,28 +73,16 @@ class GetTransactionInfoResponseTokens {
 }
 
 /**
- * Number of tokens
- * @member {Number} amount
- */
-GetTransactionInfoResponseTokens.prototype['amount'] = undefined;
-
-/**
- * Whether the tokens are aggregatable
- * @member {String} aggregationPolicy
- */
-GetTransactionInfoResponseTokens.prototype['aggregationPolicy'] = undefined;
-
-/**
  * ID of the token
  * @member {String} tokenId
  */
 GetTransactionInfoResponseTokens.prototype['tokenId'] = undefined;
 
 /**
- * Whether issuance of more tokens is locked
- * @member {Boolean} lockStatus
+ * Number of tokens
+ * @member {Number} amount
  */
-GetTransactionInfoResponseTokens.prototype['lockStatus'] = undefined;
+GetTransactionInfoResponseTokens.prototype['amount'] = undefined;
 
 /**
  * TXID the token was issued in
@@ -107,6 +95,18 @@ GetTransactionInfoResponseTokens.prototype['issueTxid'] = undefined;
  * @member {Number} divisibility
  */
 GetTransactionInfoResponseTokens.prototype['divisibility'] = undefined;
+
+/**
+ * Whether issuance of more tokens is locked
+ * @member {Boolean} lockStatus
+ */
+GetTransactionInfoResponseTokens.prototype['lockStatus'] = undefined;
+
+/**
+ * Whether the tokens are aggregatable
+ * @member {String} aggregationPolicy
+ */
+GetTransactionInfoResponseTokens.prototype['aggregationPolicy'] = undefined;
 
 
 

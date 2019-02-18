@@ -54,14 +54,14 @@
       //expect(instance).to.be.a(Neblioapi.IssueTokenRequestTransfer);
     });
 
-    it('should have the property amount (base name: "amount")', function() {
-      // uncomment below and update the code to test the property amount
+    it('should have the property address (base name: "address")', function() {
+      // uncomment below and update the code to test the property address
       //var instane = new Neblioapi.IssueTokenRequestTransfer();
       //expect(instance).to.be();
     });
 
-    it('should have the property address (base name: "address")', function() {
-      // uncomment below and update the code to test the property address
+    it('should have the property amount (base name: "amount")', function() {
+      // uncomment below and update the code to test the property amount
       //var instane = new Neblioapi.IssueTokenRequestTransfer();
       //expect(instance).to.be();
     });

@@ -607,15 +607,15 @@ export default class InsightApi {
     /**
      * Broadcasts a signed raw transaction to the network (not NTP1 specific)
      * Broadcasts a signed raw transaction to the network. If successful returns the txid of the broadcast trasnaction. 
-     * @param {module:model/SendTxRequest} body Object representing a transaction to broadcast
+     * @param {module:model/SendTxRequest} sendTxRequest Object representing a transaction to broadcast
      * @param {module:api/InsightApi~sendTxCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/BroadcastTxResponse}
      */
-    sendTx(body, callback) {
-      let postBody = body;
-      // verify the required parameter 'body' is set
-      if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling sendTx");
+    sendTx(sendTxRequest, callback) {
+      let postBody = sendTxRequest;
+      // verify the required parameter 'sendTxRequest' is set
+      if (sendTxRequest === undefined || sendTxRequest === null) {
+        throw new Error("Missing the required parameter 'sendTxRequest' when calling sendTx");
       }
 
       let pathParams = {

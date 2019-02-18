@@ -52,17 +52,20 @@ class IssueTokenRequestMetadata {
         if (data) {
             obj = obj || new IssueTokenRequestMetadata();
 
+            if (data.hasOwnProperty('tokenName')) {
+                obj['tokenName'] = ApiClient.convertToType(data['tokenName'], 'String');
+            }
+            if (data.hasOwnProperty('issuer')) {
+                obj['issuer'] = ApiClient.convertToType(data['issuer'], 'String');
+            }
+            if (data.hasOwnProperty('description')) {
+                obj['description'] = ApiClient.convertToType(data['description'], 'String');
+            }
             if (data.hasOwnProperty('urls')) {
                 obj['urls'] = ApiClient.convertToType(data['urls'], [IssueTokenRequestMetadataUrls]);
             }
             if (data.hasOwnProperty('userData')) {
                 obj['userData'] = GetTokenMetadataResponseMetadataOfIssuanceDataUserData.constructFromObject(data['userData']);
-            }
-            if (data.hasOwnProperty('tokenName')) {
-                obj['tokenName'] = ApiClient.convertToType(data['tokenName'], 'String');
-            }
-            if (data.hasOwnProperty('description')) {
-                obj['description'] = ApiClient.convertToType(data['description'], 'String');
             }
             if (data.hasOwnProperty('encryptions')) {
                 obj['encryptions'] = ApiClient.convertToType(data['encryptions'], [IssueTokenRequestMetadataEncryptions]);
@@ -70,15 +73,30 @@ class IssueTokenRequestMetadata {
             if (data.hasOwnProperty('rules')) {
                 obj['rules'] = IssueTokenRequestMetadataRules.constructFromObject(data['rules']);
             }
-            if (data.hasOwnProperty('issuer')) {
-                obj['issuer'] = ApiClient.convertToType(data['issuer'], 'String');
-            }
         }
         return obj;
     }
 
 
 }
+
+/**
+ * Token Symbol it will be identified by (ex. NIBBL)
+ * @member {String} tokenName
+ */
+IssueTokenRequestMetadata.prototype['tokenName'] = undefined;
+
+/**
+ * Name of token issuer
+ * @member {String} issuer
+ */
+IssueTokenRequestMetadata.prototype['issuer'] = undefined;
+
+/**
+ * Long name or description of token (ex. Nibble)
+ * @member {String} description
+ */
+IssueTokenRequestMetadata.prototype['description'] = undefined;
 
 /**
  * @member {Array.<module:model/IssueTokenRequestMetadataUrls>} urls
@@ -91,18 +109,6 @@ IssueTokenRequestMetadata.prototype['urls'] = undefined;
 IssueTokenRequestMetadata.prototype['userData'] = undefined;
 
 /**
- * Token Symbol it will be identified by (ex. NIBBL)
- * @member {String} tokenName
- */
-IssueTokenRequestMetadata.prototype['tokenName'] = undefined;
-
-/**
- * Long name or description of token (ex. Nibble)
- * @member {String} description
- */
-IssueTokenRequestMetadata.prototype['description'] = undefined;
-
-/**
  * Array of encryption instruction objects for encrypting userData
  * @member {Array.<module:model/IssueTokenRequestMetadataEncryptions>} encryptions
  */
@@ -112,12 +118,6 @@ IssueTokenRequestMetadata.prototype['encryptions'] = undefined;
  * @member {module:model/IssueTokenRequestMetadataRules} rules
  */
 IssueTokenRequestMetadata.prototype['rules'] = undefined;
-
-/**
- * Name of token issuer
- * @member {String} issuer
- */
-IssueTokenRequestMetadata.prototype['issuer'] = undefined;
 
 
 

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**amount** | **Number** |  | [optional] 
 **address** | **String** |  | [optional] 
+**amount** | **Number** |  | [optional] 
 
 

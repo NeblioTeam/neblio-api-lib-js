@@ -48,26 +48,26 @@ class GetTxResponseVin {
         if (data) {
             obj = obj || new GetTxResponseVin();
 
-            if (data.hasOwnProperty('sequence')) {
-                obj['sequence'] = ApiClient.convertToType(data['sequence'], 'Number');
+            if (data.hasOwnProperty('txid')) {
+                obj['txid'] = ApiClient.convertToType(data['txid'], 'String');
+            }
+            if (data.hasOwnProperty('vout')) {
+                obj['vout'] = ApiClient.convertToType(data['vout'], 'Number');
             }
             if (data.hasOwnProperty('scriptSig')) {
                 obj['scriptSig'] = GetTransactionInfoResponseScriptSig.constructFromObject(data['scriptSig']);
             }
-            if (data.hasOwnProperty('valueSat')) {
-                obj['valueSat'] = ApiClient.convertToType(data['valueSat'], 'Number');
-            }
-            if (data.hasOwnProperty('txid')) {
-                obj['txid'] = ApiClient.convertToType(data['txid'], 'String');
+            if (data.hasOwnProperty('sequence')) {
+                obj['sequence'] = ApiClient.convertToType(data['sequence'], 'Number');
             }
             if (data.hasOwnProperty('value')) {
                 obj['value'] = ApiClient.convertToType(data['value'], 'Number');
             }
+            if (data.hasOwnProperty('valueSat')) {
+                obj['valueSat'] = ApiClient.convertToType(data['valueSat'], 'Number');
+            }
             if (data.hasOwnProperty('n')) {
                 obj['n'] = ApiClient.convertToType(data['n'], 'Number');
-            }
-            if (data.hasOwnProperty('vout')) {
-                obj['vout'] = ApiClient.convertToType(data['vout'], 'Number');
             }
         }
         return obj;
@@ -77,9 +77,16 @@ class GetTxResponseVin {
 }
 
 /**
- * @member {Number} sequence
+ * TXID of the input
+ * @member {String} txid
  */
-GetTxResponseVin.prototype['sequence'] = undefined;
+GetTxResponseVin.prototype['txid'] = undefined;
+
+/**
+ * output index
+ * @member {Number} vout
+ */
+GetTxResponseVin.prototype['vout'] = undefined;
 
 /**
  * @member {module:model/GetTransactionInfoResponseScriptSig} scriptSig
@@ -87,16 +94,9 @@ GetTxResponseVin.prototype['sequence'] = undefined;
 GetTxResponseVin.prototype['scriptSig'] = undefined;
 
 /**
- * Value of input in NEBL satoshi
- * @member {Number} valueSat
+ * @member {Number} sequence
  */
-GetTxResponseVin.prototype['valueSat'] = undefined;
-
-/**
- * TXID of the input
- * @member {String} txid
- */
-GetTxResponseVin.prototype['txid'] = undefined;
+GetTxResponseVin.prototype['sequence'] = undefined;
 
 /**
  * Value of input in NEBL
@@ -105,16 +105,16 @@ GetTxResponseVin.prototype['txid'] = undefined;
 GetTxResponseVin.prototype['value'] = undefined;
 
 /**
+ * Value of input in NEBL satoshi
+ * @member {Number} valueSat
+ */
+GetTxResponseVin.prototype['valueSat'] = undefined;
+
+/**
  * input index
  * @member {Number} n
  */
 GetTxResponseVin.prototype['n'] = undefined;
-
-/**
- * output index
- * @member {Number} vout
- */
-GetTxResponseVin.prototype['vout'] = undefined;
 
 
 

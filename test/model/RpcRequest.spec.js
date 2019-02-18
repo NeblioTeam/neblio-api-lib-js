@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new Neblioapi.GetTokenHoldersResponseHolders();
+    instance = new Neblioapi.RpcRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,22 +47,34 @@
       object[property] = value;
   }
 
-  describe('GetTokenHoldersResponseHolders', function() {
-    it('should create an instance of GetTokenHoldersResponseHolders', function() {
-      // uncomment below and update the code to test GetTokenHoldersResponseHolders
-      //var instane = new Neblioapi.GetTokenHoldersResponseHolders();
-      //expect(instance).to.be.a(Neblioapi.GetTokenHoldersResponseHolders);
+  describe('RpcRequest', function() {
+    it('should create an instance of RpcRequest', function() {
+      // uncomment below and update the code to test RpcRequest
+      //var instane = new Neblioapi.RpcRequest();
+      //expect(instance).to.be.a(Neblioapi.RpcRequest);
     });
 
-    it('should have the property address (base name: "address")', function() {
-      // uncomment below and update the code to test the property address
-      //var instane = new Neblioapi.GetTokenHoldersResponseHolders();
+    it('should have the property jsonrpc (base name: "jsonrpc")', function() {
+      // uncomment below and update the code to test the property jsonrpc
+      //var instane = new Neblioapi.RpcRequest();
       //expect(instance).to.be();
     });
 
-    it('should have the property amount (base name: "amount")', function() {
-      // uncomment below and update the code to test the property amount
-      //var instane = new Neblioapi.GetTokenHoldersResponseHolders();
+    it('should have the property id (base name: "id")', function() {
+      // uncomment below and update the code to test the property id
+      //var instane = new Neblioapi.RpcRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property method (base name: "method")', function() {
+      // uncomment below and update the code to test the property method
+      //var instane = new Neblioapi.RpcRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property params (base name: "params")', function() {
+      // uncomment below and update the code to test the property params
+      //var instane = new Neblioapi.RpcRequest();
       //expect(instance).to.be();
     });
 

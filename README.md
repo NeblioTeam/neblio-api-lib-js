@@ -104,6 +104,7 @@ Class | Method | HTTP request | Description
 *Neblioapi.InsightApi* | [**getTx**](docs/InsightApi.md#getTx) | **GET** /ins/tx/{txid} | Returns transaction object
 *Neblioapi.InsightApi* | [**getTxs**](docs/InsightApi.md#getTxs) | **GET** /ins/txs | Get transactions by block or address
 *Neblioapi.InsightApi* | [**sendTx**](docs/InsightApi.md#sendTx) | **POST** /ins/tx/send | Broadcasts a signed raw transaction to the network (not NTP1 specific)
+*Neblioapi.JSONRPCApi* | [**rPC**](docs/JSONRPCApi.md#rPC) | **POST** / | Send a JSON-RPC call to a localhost neblio-Qt or nebliod node
 *Neblioapi.NTP1Api* | [**broadcastTx**](docs/NTP1Api.md#broadcastTx) | **POST** /ntp1/broadcast | Broadcasts a signed raw transaction to the network
 *Neblioapi.NTP1Api* | [**burnToken**](docs/NTP1Api.md#burnToken) | **POST** /ntp1/burntoken | Builds a transaction that burns an NTP1 Token
 *Neblioapi.NTP1Api* | [**getAddressInfo**](docs/NTP1Api.md#getAddressInfo) | **GET** /ntp1/addressinfo/{address} | Information On a Neblio Address
@@ -189,6 +190,8 @@ Class | Method | HTTP request | Description
  - [Neblioapi.IssueTokenRequestMetadataUrls](docs/IssueTokenRequestMetadataUrls.md)
  - [Neblioapi.IssueTokenRequestTransfer](docs/IssueTokenRequestTransfer.md)
  - [Neblioapi.IssueTokenResponse](docs/IssueTokenResponse.md)
+ - [Neblioapi.RpcRequest](docs/RpcRequest.md)
+ - [Neblioapi.RpcResponse](docs/RpcResponse.md)
  - [Neblioapi.SendTokenRequest](docs/SendTokenRequest.md)
  - [Neblioapi.SendTokenRequestTo](docs/SendTokenRequestTo.md)
  - [Neblioapi.SendTokenResponse](docs/SendTokenResponse.md)
@@ -197,4 +200,8 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Authorization
 
-All endpoints do not require authorization.
+
+### rpcAuth
+
+- **Type**: HTTP basic authentication
+

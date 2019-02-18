@@ -47,11 +47,11 @@ class GetTokenHoldersResponseHolders {
         if (data) {
             obj = obj || new GetTokenHoldersResponseHolders();
 
-            if (data.hasOwnProperty('amount')) {
-                obj['amount'] = ApiClient.convertToType(data['amount'], 'Number');
-            }
             if (data.hasOwnProperty('address')) {
                 obj['address'] = ApiClient.convertToType(data['address'], 'String');
+            }
+            if (data.hasOwnProperty('amount')) {
+                obj['amount'] = ApiClient.convertToType(data['amount'], 'Number');
             }
         }
         return obj;
@@ -61,14 +61,14 @@ class GetTokenHoldersResponseHolders {
 }
 
 /**
- * @member {Number} amount
- */
-GetTokenHoldersResponseHolders.prototype['amount'] = undefined;
-
-/**
  * @member {String} address
  */
 GetTokenHoldersResponseHolders.prototype['address'] = undefined;
+
+/**
+ * @member {Number} amount
+ */
+GetTokenHoldersResponseHolders.prototype['amount'] = undefined;
 
 
 

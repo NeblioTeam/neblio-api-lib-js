@@ -607,15 +607,15 @@ export default class TestnetInsightApi {
     /**
      * Broadcasts a signed raw transaction to the network (not NTP1 specific)
      * Broadcasts a signed raw transaction to the network. If successful returns the txid of the broadcast trasnaction. 
-     * @param {module:model/SendTxRequest} body Object representing a transaction to broadcast
+     * @param {module:model/SendTxRequest} sendTxRequest Object representing a transaction to broadcast
      * @param {module:api/TestnetInsightApi~testnetSendTxCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/BroadcastTxResponse}
      */
-    testnetSendTx(body, callback) {
-      let postBody = body;
-      // verify the required parameter 'body' is set
-      if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling testnetSendTx");
+    testnetSendTx(sendTxRequest, callback) {
+      let postBody = sendTxRequest;
+      // verify the required parameter 'sendTxRequest' is set
+      if (sendTxRequest === undefined || sendTxRequest === null) {
+        throw new Error("Missing the required parameter 'sendTxRequest' when calling testnetSendTx");
       }
 
       let pathParams = {

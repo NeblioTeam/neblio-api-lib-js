@@ -48,17 +48,17 @@ class GetTokenMetadataResponseMetadataOfIssuanceData {
         if (data) {
             obj = obj || new GetTokenMetadataResponseMetadataOfIssuanceData();
 
-            if (data.hasOwnProperty('userData')) {
-                obj['userData'] = GetTokenMetadataResponseMetadataOfIssuanceDataUserData.constructFromObject(data['userData']);
-            }
             if (data.hasOwnProperty('tokenName')) {
                 obj['tokenName'] = ApiClient.convertToType(data['tokenName'], 'String');
+            }
+            if (data.hasOwnProperty('issuer')) {
+                obj['issuer'] = ApiClient.convertToType(data['issuer'], 'String');
             }
             if (data.hasOwnProperty('description')) {
                 obj['description'] = ApiClient.convertToType(data['description'], 'String');
             }
-            if (data.hasOwnProperty('issuer')) {
-                obj['issuer'] = ApiClient.convertToType(data['issuer'], 'String');
+            if (data.hasOwnProperty('userData')) {
+                obj['userData'] = GetTokenMetadataResponseMetadataOfIssuanceDataUserData.constructFromObject(data['userData']);
             }
         }
         return obj;
@@ -68,15 +68,16 @@ class GetTokenMetadataResponseMetadataOfIssuanceData {
 }
 
 /**
- * @member {module:model/GetTokenMetadataResponseMetadataOfIssuanceDataUserData} userData
- */
-GetTokenMetadataResponseMetadataOfIssuanceData.prototype['userData'] = undefined;
-
-/**
  * Token symbol
  * @member {String} tokenName
  */
 GetTokenMetadataResponseMetadataOfIssuanceData.prototype['tokenName'] = undefined;
+
+/**
+ * Name of token issuer
+ * @member {String} issuer
+ */
+GetTokenMetadataResponseMetadataOfIssuanceData.prototype['issuer'] = undefined;
 
 /**
  * Token description
@@ -85,10 +86,9 @@ GetTokenMetadataResponseMetadataOfIssuanceData.prototype['tokenName'] = undefine
 GetTokenMetadataResponseMetadataOfIssuanceData.prototype['description'] = undefined;
 
 /**
- * Name of token issuer
- * @member {String} issuer
+ * @member {module:model/GetTokenMetadataResponseMetadataOfIssuanceDataUserData} userData
  */
-GetTokenMetadataResponseMetadataOfIssuanceData.prototype['issuer'] = undefined;
+GetTokenMetadataResponseMetadataOfIssuanceData.prototype['userData'] = undefined;
 
 
 

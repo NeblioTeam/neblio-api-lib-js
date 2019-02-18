@@ -54,6 +54,24 @@
       //expect(instance).to.be.a(Neblioapi.GetTransactionInfoResponseVin);
     });
 
+    it('should have the property txid (base name: "txid")', function() {
+      // uncomment below and update the code to test the property txid
+      //var instane = new Neblioapi.GetTransactionInfoResponseVin();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property vout (base name: "vout")', function() {
+      // uncomment below and update the code to test the property vout
+      //var instane = new Neblioapi.GetTransactionInfoResponseVin();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property scriptSig (base name: "scriptSig")', function() {
+      // uncomment below and update the code to test the property scriptSig
+      //var instane = new Neblioapi.GetTransactionInfoResponseVin();
+      //expect(instance).to.be();
+    });
+
     it('should have the property sequence (base name: "sequence")', function() {
       // uncomment below and update the code to test the property sequence
       //var instane = new Neblioapi.GetTransactionInfoResponseVin();
@@ -66,18 +84,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property scriptSig (base name: "scriptSig")', function() {
-      // uncomment below and update the code to test the property scriptSig
-      //var instane = new Neblioapi.GetTransactionInfoResponseVin();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property txid (base name: "txid")', function() {
-      // uncomment below and update the code to test the property txid
-      //var instane = new Neblioapi.GetTransactionInfoResponseVin();
-      //expect(instance).to.be();
-    });
-
     it('should have the property tokens (base name: "tokens")', function() {
       // uncomment below and update the code to test the property tokens
       //var instane = new Neblioapi.GetTransactionInfoResponseVin();
@@ -86,12 +92,6 @@
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instane = new Neblioapi.GetTransactionInfoResponseVin();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property vout (base name: "vout")', function() {
-      // uncomment below and update the code to test the property vout
       //var instane = new Neblioapi.GetTransactionInfoResponseVin();
       //expect(instance).to.be();
     });

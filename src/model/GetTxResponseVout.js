@@ -48,8 +48,20 @@ class GetTxResponseVout {
         if (data) {
             obj = obj || new GetTxResponseVout();
 
+            if (data.hasOwnProperty('value')) {
+                obj['value'] = ApiClient.convertToType(data['value'], 'Number');
+            }
+            if (data.hasOwnProperty('n')) {
+                obj['n'] = ApiClient.convertToType(data['n'], 'Number');
+            }
             if (data.hasOwnProperty('scriptPubKey')) {
                 obj['scriptPubKey'] = GetTransactionInfoResponsePreviousOutput.constructFromObject(data['scriptPubKey']);
+            }
+            if (data.hasOwnProperty('used')) {
+                obj['used'] = ApiClient.convertToType(data['used'], 'Boolean');
+            }
+            if (data.hasOwnProperty('blockheight')) {
+                obj['blockheight'] = ApiClient.convertToType(data['blockheight'], 'Number');
             }
             if (data.hasOwnProperty('usedBlockheight')) {
                 obj['usedBlockheight'] = ApiClient.convertToType(data['usedBlockheight'], 'Number');
@@ -57,47 +69,12 @@ class GetTxResponseVout {
             if (data.hasOwnProperty('usedTxid')) {
                 obj['usedTxid'] = ApiClient.convertToType(data['usedTxid'], 'String');
             }
-            if (data.hasOwnProperty('used')) {
-                obj['used'] = ApiClient.convertToType(data['used'], 'Boolean');
-            }
-            if (data.hasOwnProperty('value')) {
-                obj['value'] = ApiClient.convertToType(data['value'], 'Number');
-            }
-            if (data.hasOwnProperty('n')) {
-                obj['n'] = ApiClient.convertToType(data['n'], 'Number');
-            }
-            if (data.hasOwnProperty('blockheight')) {
-                obj['blockheight'] = ApiClient.convertToType(data['blockheight'], 'Number');
-            }
         }
         return obj;
     }
 
 
 }
-
-/**
- * @member {module:model/GetTransactionInfoResponsePreviousOutput} scriptPubKey
- */
-GetTxResponseVout.prototype['scriptPubKey'] = undefined;
-
-/**
- * Blockheight this output was used in
- * @member {Number} usedBlockheight
- */
-GetTxResponseVout.prototype['usedBlockheight'] = undefined;
-
-/**
- * TXID this output was used in
- * @member {String} usedTxid
- */
-GetTxResponseVout.prototype['usedTxid'] = undefined;
-
-/**
- * Whether this output has now been used
- * @member {Boolean} used
- */
-GetTxResponseVout.prototype['used'] = undefined;
 
 /**
  * Value of the output in NEBL
@@ -112,10 +89,33 @@ GetTxResponseVout.prototype['value'] = undefined;
 GetTxResponseVout.prototype['n'] = undefined;
 
 /**
+ * @member {module:model/GetTransactionInfoResponsePreviousOutput} scriptPubKey
+ */
+GetTxResponseVout.prototype['scriptPubKey'] = undefined;
+
+/**
+ * Whether this output has now been used
+ * @member {Boolean} used
+ */
+GetTxResponseVout.prototype['used'] = undefined;
+
+/**
  * Blockheight of this transaction
  * @member {Number} blockheight
  */
 GetTxResponseVout.prototype['blockheight'] = undefined;
+
+/**
+ * Blockheight this output was used in
+ * @member {Number} usedBlockheight
+ */
+GetTxResponseVout.prototype['usedBlockheight'] = undefined;
+
+/**
+ * TXID this output was used in
+ * @member {String} usedTxid
+ */
+GetTxResponseVout.prototype['usedTxid'] = undefined;
 
 
 

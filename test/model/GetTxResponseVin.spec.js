@@ -54,8 +54,14 @@
       //expect(instance).to.be.a(Neblioapi.GetTxResponseVin);
     });
 
-    it('should have the property sequence (base name: "sequence")', function() {
-      // uncomment below and update the code to test the property sequence
+    it('should have the property txid (base name: "txid")', function() {
+      // uncomment below and update the code to test the property txid
+      //var instane = new Neblioapi.GetTxResponseVin();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property vout (base name: "vout")', function() {
+      // uncomment below and update the code to test the property vout
       //var instane = new Neblioapi.GetTxResponseVin();
       //expect(instance).to.be();
     });
@@ -66,14 +72,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property valueSat (base name: "valueSat")', function() {
-      // uncomment below and update the code to test the property valueSat
-      //var instane = new Neblioapi.GetTxResponseVin();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property txid (base name: "txid")', function() {
-      // uncomment below and update the code to test the property txid
+    it('should have the property sequence (base name: "sequence")', function() {
+      // uncomment below and update the code to test the property sequence
       //var instane = new Neblioapi.GetTxResponseVin();
       //expect(instance).to.be();
     });
@@ -84,14 +84,14 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property n (base name: "n")', function() {
-      // uncomment below and update the code to test the property n
+    it('should have the property valueSat (base name: "valueSat")', function() {
+      // uncomment below and update the code to test the property valueSat
       //var instane = new Neblioapi.GetTxResponseVin();
       //expect(instance).to.be();
     });
 
-    it('should have the property vout (base name: "vout")', function() {
-      // uncomment below and update the code to test the property vout
+    it('should have the property n (base name: "n")', function() {
+      // uncomment below and update the code to test the property n
       //var instane = new Neblioapi.GetTxResponseVin();
       //expect(instance).to.be();
     });

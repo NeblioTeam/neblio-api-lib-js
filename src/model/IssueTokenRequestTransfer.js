@@ -47,11 +47,11 @@ class IssueTokenRequestTransfer {
         if (data) {
             obj = obj || new IssueTokenRequestTransfer();
 
-            if (data.hasOwnProperty('amount')) {
-                obj['amount'] = ApiClient.convertToType(data['amount'], 'Number');
-            }
             if (data.hasOwnProperty('address')) {
                 obj['address'] = ApiClient.convertToType(data['address'], 'String');
+            }
+            if (data.hasOwnProperty('amount')) {
+                obj['amount'] = ApiClient.convertToType(data['amount'], 'Number');
             }
         }
         return obj;
@@ -61,15 +61,15 @@ class IssueTokenRequestTransfer {
 }
 
 /**
- * @member {Number} amount
- */
-IssueTokenRequestTransfer.prototype['amount'] = undefined;
-
-/**
  * Address to send the amount of issued tokens to
  * @member {String} address
  */
 IssueTokenRequestTransfer.prototype['address'] = undefined;
+
+/**
+ * @member {Number} amount
+ */
+IssueTokenRequestTransfer.prototype['amount'] = undefined;
 
 
 

@@ -54,14 +54,14 @@
       //expect(instance).to.be.a(Neblioapi.IssueTokenRequestMetadataUrls);
     });
 
-    it('should have the property dataHash (base name: "dataHash")', function() {
-      // uncomment below and update the code to test the property dataHash
+    it('should have the property name (base name: "name")', function() {
+      // uncomment below and update the code to test the property name
       //var instane = new Neblioapi.IssueTokenRequestMetadataUrls();
       //expect(instance).to.be();
     });
 
-    it('should have the property name (base name: "name")', function() {
-      // uncomment below and update the code to test the property name
+    it('should have the property url (base name: "url")', function() {
+      // uncomment below and update the code to test the property url
       //var instane = new Neblioapi.IssueTokenRequestMetadataUrls();
       //expect(instance).to.be();
     });
@@ -72,8 +72,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property url (base name: "url")', function() {
-      // uncomment below and update the code to test the property url
+    it('should have the property dataHash (base name: "dataHash")', function() {
+      // uncomment below and update the code to test the property dataHash
       //var instane = new Neblioapi.IssueTokenRequestMetadataUrls();
       //expect(instance).to.be();
     });

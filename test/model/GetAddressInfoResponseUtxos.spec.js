@@ -54,18 +54,6 @@
       //expect(instance).to.be.a(Neblioapi.GetAddressInfoResponseUtxos);
     });
 
-    it('should have the property scriptPubKey (base name: "scriptPubKey")', function() {
-      // uncomment below and update the code to test the property scriptPubKey
-      //var instane = new Neblioapi.GetAddressInfoResponseUtxos();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property blocktime (base name: "blocktime")', function() {
-      // uncomment below and update the code to test the property blocktime
-      //var instane = new Neblioapi.GetAddressInfoResponseUtxos();
-      //expect(instance).to.be();
-    });
-
     it('should have the property index (base name: "index")', function() {
       // uncomment below and update the code to test the property index
       //var instane = new Neblioapi.GetAddressInfoResponseUtxos();
@@ -78,8 +66,20 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property tokens (base name: "tokens")', function() {
-      // uncomment below and update the code to test the property tokens
+    it('should have the property blockheight (base name: "blockheight")', function() {
+      // uncomment below and update the code to test the property blockheight
+      //var instane = new Neblioapi.GetAddressInfoResponseUtxos();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property blocktime (base name: "blocktime")', function() {
+      // uncomment below and update the code to test the property blocktime
+      //var instane = new Neblioapi.GetAddressInfoResponseUtxos();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property scriptPubKey (base name: "scriptPubKey")', function() {
+      // uncomment below and update the code to test the property scriptPubKey
       //var instane = new Neblioapi.GetAddressInfoResponseUtxos();
       //expect(instance).to.be();
     });
@@ -96,8 +96,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property blockheight (base name: "blockheight")', function() {
-      // uncomment below and update the code to test the property blockheight
+    it('should have the property tokens (base name: "tokens")', function() {
+      // uncomment below and update the code to test the property tokens
       //var instane = new Neblioapi.GetAddressInfoResponseUtxos();
       //expect(instance).to.be();
     });

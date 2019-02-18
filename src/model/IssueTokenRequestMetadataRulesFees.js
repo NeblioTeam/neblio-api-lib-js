@@ -48,11 +48,11 @@ class IssueTokenRequestMetadataRulesFees {
         if (data) {
             obj = obj || new IssueTokenRequestMetadataRulesFees();
 
-            if (data.hasOwnProperty('locked')) {
-                obj['locked'] = ApiClient.convertToType(data['locked'], 'Boolean');
-            }
             if (data.hasOwnProperty('items')) {
                 obj['items'] = ApiClient.convertToType(data['items'], [IssueTokenRequestMetadataRulesFeesItems]);
+            }
+            if (data.hasOwnProperty('locked')) {
+                obj['locked'] = ApiClient.convertToType(data['locked'], 'Boolean');
             }
         }
         return obj;
@@ -62,16 +62,16 @@ class IssueTokenRequestMetadataRulesFees {
 }
 
 /**
- * Whether this rule can be modified in future transactions
- * @member {Boolean} locked
- */
-IssueTokenRequestMetadataRulesFees.prototype['locked'] = undefined;
-
-/**
  * Array of objects describing fee rules
  * @member {Array.<module:model/IssueTokenRequestMetadataRulesFeesItems>} items
  */
 IssueTokenRequestMetadataRulesFees.prototype['items'] = undefined;
+
+/**
+ * Whether this rule can be modified in future transactions
+ * @member {Boolean} locked
+ */
+IssueTokenRequestMetadataRulesFees.prototype['locked'] = undefined;
 
 
 

@@ -47,20 +47,20 @@ class GetTransactionInfoResponsePreviousOutput {
         if (data) {
             obj = obj || new GetTransactionInfoResponsePreviousOutput();
 
-            if (data.hasOwnProperty('addresses')) {
-                obj['addresses'] = ApiClient.convertToType(data['addresses'], ['String']);
-            }
             if (data.hasOwnProperty('asm')) {
                 obj['asm'] = ApiClient.convertToType(data['asm'], 'String');
             }
             if (data.hasOwnProperty('hex')) {
                 obj['hex'] = ApiClient.convertToType(data['hex'], 'String');
             }
+            if (data.hasOwnProperty('reqSigs')) {
+                obj['reqSigs'] = ApiClient.convertToType(data['reqSigs'], 'Number');
+            }
             if (data.hasOwnProperty('type')) {
                 obj['type'] = ApiClient.convertToType(data['type'], 'String');
             }
-            if (data.hasOwnProperty('reqSigs')) {
-                obj['reqSigs'] = ApiClient.convertToType(data['reqSigs'], 'Number');
+            if (data.hasOwnProperty('addresses')) {
+                obj['addresses'] = ApiClient.convertToType(data['addresses'], ['String']);
             }
         }
         return obj;
@@ -68,11 +68,6 @@ class GetTransactionInfoResponsePreviousOutput {
 
 
 }
-
-/**
- * @member {Array.<String>} addresses
- */
-GetTransactionInfoResponsePreviousOutput.prototype['addresses'] = undefined;
 
 /**
  * @member {String} asm
@@ -85,14 +80,19 @@ GetTransactionInfoResponsePreviousOutput.prototype['asm'] = undefined;
 GetTransactionInfoResponsePreviousOutput.prototype['hex'] = undefined;
 
 /**
+ * @member {Number} reqSigs
+ */
+GetTransactionInfoResponsePreviousOutput.prototype['reqSigs'] = undefined;
+
+/**
  * @member {String} type
  */
 GetTransactionInfoResponsePreviousOutput.prototype['type'] = undefined;
 
 /**
- * @member {Number} reqSigs
+ * @member {Array.<String>} addresses
  */
-GetTransactionInfoResponsePreviousOutput.prototype['reqSigs'] = undefined;
+GetTransactionInfoResponsePreviousOutput.prototype['addresses'] = undefined;
 
 
 

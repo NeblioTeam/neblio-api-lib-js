@@ -47,11 +47,11 @@ class GetTokenMetadataResponseMetadataOfIssuanceDataUserDataMeta {
         if (data) {
             obj = obj || new GetTokenMetadataResponseMetadataOfIssuanceDataUserDataMeta();
 
-            if (data.hasOwnProperty('value')) {
-                obj['value'] = ApiClient.convertToType(data['value'], 'String');
-            }
             if (data.hasOwnProperty('key')) {
                 obj['key'] = ApiClient.convertToType(data['key'], 'String');
+            }
+            if (data.hasOwnProperty('value')) {
+                obj['value'] = ApiClient.convertToType(data['value'], 'String');
             }
         }
         return obj;
@@ -61,14 +61,14 @@ class GetTokenMetadataResponseMetadataOfIssuanceDataUserDataMeta {
 }
 
 /**
- * @member {String} value
- */
-GetTokenMetadataResponseMetadataOfIssuanceDataUserDataMeta.prototype['value'] = undefined;
-
-/**
  * @member {String} key
  */
 GetTokenMetadataResponseMetadataOfIssuanceDataUserDataMeta.prototype['key'] = undefined;
+
+/**
+ * @member {String} value
+ */
+GetTokenMetadataResponseMetadataOfIssuanceDataUserDataMeta.prototype['value'] = undefined;
 
 
 

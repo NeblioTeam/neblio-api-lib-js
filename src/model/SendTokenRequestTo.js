@@ -47,11 +47,11 @@ class SendTokenRequestTo {
         if (data) {
             obj = obj || new SendTokenRequestTo();
 
-            if (data.hasOwnProperty('amount')) {
-                obj['amount'] = ApiClient.convertToType(data['amount'], 'Number');
-            }
             if (data.hasOwnProperty('address')) {
                 obj['address'] = ApiClient.convertToType(data['address'], 'String');
+            }
+            if (data.hasOwnProperty('amount')) {
+                obj['amount'] = ApiClient.convertToType(data['amount'], 'Number');
             }
             if (data.hasOwnProperty('tokenId')) {
                 obj['tokenId'] = ApiClient.convertToType(data['tokenId'], 'String');
@@ -64,16 +64,16 @@ class SendTokenRequestTo {
 }
 
 /**
- * Number of tokens to send
- * @member {Number} amount
- */
-SendTokenRequestTo.prototype['amount'] = undefined;
-
-/**
  * Address to transfer tokens to
  * @member {String} address
  */
 SendTokenRequestTo.prototype['address'] = undefined;
+
+/**
+ * Number of tokens to send
+ * @member {Number} amount
+ */
+SendTokenRequestTo.prototype['amount'] = undefined;
 
 /**
  * ID of token we are sending

@@ -59,11 +59,14 @@ import IssueTokenRequestMetadataRulesHolders from './model/IssueTokenRequestMeta
 import IssueTokenRequestMetadataUrls from './model/IssueTokenRequestMetadataUrls';
 import IssueTokenRequestTransfer from './model/IssueTokenRequestTransfer';
 import IssueTokenResponse from './model/IssueTokenResponse';
+import RpcRequest from './model/RpcRequest';
+import RpcResponse from './model/RpcResponse';
 import SendTokenRequest from './model/SendTokenRequest';
 import SendTokenRequestTo from './model/SendTokenRequestTo';
 import SendTokenResponse from './model/SendTokenResponse';
 import SendTxRequest from './model/SendTxRequest';
 import InsightApi from './api/InsightApi';
+import JSONRPCApi from './api/JSONRPCApi';
 import NTP1Api from './api/NTP1Api';
 import TestnetFaucetApi from './api/TestnetFaucetApi';
 import TestnetInsightApi from './api/TestnetInsightApi';
@@ -385,6 +388,18 @@ export {
     IssueTokenResponse,
 
     /**
+     * The RpcRequest model constructor.
+     * @property {module:model/RpcRequest}
+     */
+    RpcRequest,
+
+    /**
+     * The RpcResponse model constructor.
+     * @property {module:model/RpcResponse}
+     */
+    RpcResponse,
+
+    /**
      * The SendTokenRequest model constructor.
      * @property {module:model/SendTokenRequest}
      */
@@ -413,6 +428,12 @@ export {
     * @property {module:api/InsightApi}
     */
     InsightApi,
+
+    /**
+    * The JSONRPCApi service constructor.
+    * @property {module:api/JSONRPCApi}
+    */
+    JSONRPCApi,
 
     /**
     * The NTP1Api service constructor.

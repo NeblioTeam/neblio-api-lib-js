@@ -54,6 +54,24 @@
       //expect(instance).to.be.a(Neblioapi.IssueTokenRequestMetadata);
     });
 
+    it('should have the property tokenName (base name: "tokenName")', function() {
+      // uncomment below and update the code to test the property tokenName
+      //var instane = new Neblioapi.IssueTokenRequestMetadata();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property issuer (base name: "issuer")', function() {
+      // uncomment below and update the code to test the property issuer
+      //var instane = new Neblioapi.IssueTokenRequestMetadata();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property description (base name: "description")', function() {
+      // uncomment below and update the code to test the property description
+      //var instane = new Neblioapi.IssueTokenRequestMetadata();
+      //expect(instance).to.be();
+    });
+
     it('should have the property urls (base name: "urls")', function() {
       // uncomment below and update the code to test the property urls
       //var instane = new Neblioapi.IssueTokenRequestMetadata();
@@ -66,18 +84,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property tokenName (base name: "tokenName")', function() {
-      // uncomment below and update the code to test the property tokenName
-      //var instane = new Neblioapi.IssueTokenRequestMetadata();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property description (base name: "description")', function() {
-      // uncomment below and update the code to test the property description
-      //var instane = new Neblioapi.IssueTokenRequestMetadata();
-      //expect(instance).to.be();
-    });
-
     it('should have the property encryptions (base name: "encryptions")', function() {
       // uncomment below and update the code to test the property encryptions
       //var instane = new Neblioapi.IssueTokenRequestMetadata();
@@ -86,12 +92,6 @@
 
     it('should have the property rules (base name: "rules")', function() {
       // uncomment below and update the code to test the property rules
-      //var instane = new Neblioapi.IssueTokenRequestMetadata();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property issuer (base name: "issuer")', function() {
-      // uncomment below and update the code to test the property issuer
       //var instane = new Neblioapi.IssueTokenRequestMetadata();
       //expect(instance).to.be();
     });

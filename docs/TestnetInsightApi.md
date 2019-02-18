@@ -572,7 +572,7 @@ No authorization required
 
 <a name="testnetSendTx"></a>
 # **testnetSendTx**
-> BroadcastTxResponse testnetSendTx(body)
+> BroadcastTxResponse testnetSendTx(sendTxRequest)
 
 Broadcasts a signed raw transaction to the network (not NTP1 specific)
 
@@ -583,8 +583,8 @@ Broadcasts a signed raw transaction to the network. If successful returns the tx
 import Neblioapi from 'neblioapi';
 
 let apiInstance = new Neblioapi.TestnetInsightApi();
-let body = new Neblioapi.SendTxRequest(); // SendTxRequest | Object representing a transaction to broadcast
-apiInstance.testnetSendTx(body, (error, data, response) => {
+let sendTxRequest = new Neblioapi.SendTxRequest(); // SendTxRequest | Object representing a transaction to broadcast
+apiInstance.testnetSendTx(sendTxRequest, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -597,7 +597,7 @@ apiInstance.testnetSendTx(body, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**SendTxRequest**](SendTxRequest.md)| Object representing a transaction to broadcast | 
+ **sendTxRequest** | [**SendTxRequest**](SendTxRequest.md)| Object representing a transaction to broadcast | 
 
 ### Return type
 

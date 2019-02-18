@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new Neblioapi.GetTokenHoldersResponseHolders();
+    instance = new Neblioapi.RpcResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,22 +47,28 @@
       object[property] = value;
   }
 
-  describe('GetTokenHoldersResponseHolders', function() {
-    it('should create an instance of GetTokenHoldersResponseHolders', function() {
-      // uncomment below and update the code to test GetTokenHoldersResponseHolders
-      //var instane = new Neblioapi.GetTokenHoldersResponseHolders();
-      //expect(instance).to.be.a(Neblioapi.GetTokenHoldersResponseHolders);
+  describe('RpcResponse', function() {
+    it('should create an instance of RpcResponse', function() {
+      // uncomment below and update the code to test RpcResponse
+      //var instane = new Neblioapi.RpcResponse();
+      //expect(instance).to.be.a(Neblioapi.RpcResponse);
     });
 
-    it('should have the property address (base name: "address")', function() {
-      // uncomment below and update the code to test the property address
-      //var instane = new Neblioapi.GetTokenHoldersResponseHolders();
+    it('should have the property result (base name: "result")', function() {
+      // uncomment below and update the code to test the property result
+      //var instane = new Neblioapi.RpcResponse();
       //expect(instance).to.be();
     });
 
-    it('should have the property amount (base name: "amount")', function() {
-      // uncomment below and update the code to test the property amount
-      //var instane = new Neblioapi.GetTokenHoldersResponseHolders();
+    it('should have the property id (base name: "id")', function() {
+      // uncomment below and update the code to test the property id
+      //var instane = new Neblioapi.RpcResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property error (base name: "error")', function() {
+      // uncomment below and update the code to test the property error
+      //var instane = new Neblioapi.RpcResponse();
       //expect(instance).to.be();
     });
 

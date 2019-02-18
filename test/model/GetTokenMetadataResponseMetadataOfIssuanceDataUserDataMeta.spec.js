@@ -54,14 +54,14 @@
       //expect(instance).to.be.a(Neblioapi.GetTokenMetadataResponseMetadataOfIssuanceDataUserDataMeta);
     });
 
-    it('should have the property value (base name: "value")', function() {
-      // uncomment below and update the code to test the property value
+    it('should have the property key (base name: "key")', function() {
+      // uncomment below and update the code to test the property key
       //var instane = new Neblioapi.GetTokenMetadataResponseMetadataOfIssuanceDataUserDataMeta();
       //expect(instance).to.be();
     });
 
-    it('should have the property key (base name: "key")', function() {
-      // uncomment below and update the code to test the property key
+    it('should have the property value (base name: "value")', function() {
+      // uncomment below and update the code to test the property value
       //var instane = new Neblioapi.GetTokenMetadataResponseMetadataOfIssuanceDataUserDataMeta();
       //expect(instance).to.be();
     });

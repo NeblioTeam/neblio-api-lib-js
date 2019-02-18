@@ -54,26 +54,14 @@
       //expect(instance).to.be.a(Neblioapi.GetAddressInfoResponseTokens);
     });
 
-    it('should have the property amount (base name: "amount")', function() {
-      // uncomment below and update the code to test the property amount
-      //var instane = new Neblioapi.GetAddressInfoResponseTokens();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property aggregationPolicy (base name: "aggregationPolicy")', function() {
-      // uncomment below and update the code to test the property aggregationPolicy
-      //var instane = new Neblioapi.GetAddressInfoResponseTokens();
-      //expect(instance).to.be();
-    });
-
     it('should have the property tokenId (base name: "tokenId")', function() {
       // uncomment below and update the code to test the property tokenId
       //var instane = new Neblioapi.GetAddressInfoResponseTokens();
       //expect(instance).to.be();
     });
 
-    it('should have the property lockStatus (base name: "lockStatus")', function() {
-      // uncomment below and update the code to test the property lockStatus
+    it('should have the property amount (base name: "amount")', function() {
+      // uncomment below and update the code to test the property amount
       //var instane = new Neblioapi.GetAddressInfoResponseTokens();
       //expect(instance).to.be();
     });
@@ -86,6 +74,18 @@
 
     it('should have the property divisibility (base name: "divisibility")', function() {
       // uncomment below and update the code to test the property divisibility
+      //var instane = new Neblioapi.GetAddressInfoResponseTokens();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property lockStatus (base name: "lockStatus")', function() {
+      // uncomment below and update the code to test the property lockStatus
+      //var instane = new Neblioapi.GetAddressInfoResponseTokens();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property aggregationPolicy (base name: "aggregationPolicy")', function() {
+      // uncomment below and update the code to test the property aggregationPolicy
       //var instane = new Neblioapi.GetAddressInfoResponseTokens();
       //expect(instance).to.be();
     });

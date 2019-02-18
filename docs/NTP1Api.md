@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 <a name="broadcastTx"></a>
 # **broadcastTx**
-> BroadcastTxResponse broadcastTx(body)
+> BroadcastTxResponse broadcastTx(broadcastTxRequest)
 
 Broadcasts a signed raw transaction to the network
 
@@ -29,8 +29,8 @@ Broadcasts a signed raw transaction to the network. If successful returns the tx
 import Neblioapi from 'neblioapi';
 
 let apiInstance = new Neblioapi.NTP1Api();
-let body = new Neblioapi.BroadcastTxRequest(); // BroadcastTxRequest | Object representing a transaction to broadcast
-apiInstance.broadcastTx(body, (error, data, response) => {
+let broadcastTxRequest = new Neblioapi.BroadcastTxRequest(); // BroadcastTxRequest | Object representing a transaction to broadcast
+apiInstance.broadcastTx(broadcastTxRequest, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -43,7 +43,7 @@ apiInstance.broadcastTx(body, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**BroadcastTxRequest**](BroadcastTxRequest.md)| Object representing a transaction to broadcast | 
+ **broadcastTxRequest** | [**BroadcastTxRequest**](BroadcastTxRequest.md)| Object representing a transaction to broadcast | 
 
 ### Return type
 
@@ -60,7 +60,7 @@ No authorization required
 
 <a name="burnToken"></a>
 # **burnToken**
-> BurnTokenResponse burnToken(body)
+> BurnTokenResponse burnToken(burnTokenRequest)
 
 Builds a transaction that burns an NTP1 Token
 
@@ -71,8 +71,8 @@ Builds an unsigned raw transaction that burns an NTP1 token on the Neblio blockc
 import Neblioapi from 'neblioapi';
 
 let apiInstance = new Neblioapi.NTP1Api();
-let body = new Neblioapi.BurnTokenRequest(); // BurnTokenRequest | Object representing the token to be burned
-apiInstance.burnToken(body, (error, data, response) => {
+let burnTokenRequest = new Neblioapi.BurnTokenRequest(); // BurnTokenRequest | Object representing the token to be burned
+apiInstance.burnToken(burnTokenRequest, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -85,7 +85,7 @@ apiInstance.burnToken(body, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**BurnTokenRequest**](BurnTokenRequest.md)| Object representing the token to be burned | 
+ **burnTokenRequest** | [**BurnTokenRequest**](BurnTokenRequest.md)| Object representing the token to be burned | 
 
 ### Return type
 
@@ -356,7 +356,7 @@ No authorization required
 
 <a name="issueToken"></a>
 # **issueToken**
-> IssueTokenResponse issueToken(body)
+> IssueTokenResponse issueToken(issueTokenRequest)
 
 Builds a transaction that issues a new NTP1 Token
 
@@ -367,8 +367,8 @@ Builds an unsigned raw transaction that issues a new NTP1 token on the Neblio bl
 import Neblioapi from 'neblioapi';
 
 let apiInstance = new Neblioapi.NTP1Api();
-let body = new Neblioapi.IssueTokenRequest(); // IssueTokenRequest | Object representing the token to be created
-apiInstance.issueToken(body, (error, data, response) => {
+let issueTokenRequest = new Neblioapi.IssueTokenRequest(); // IssueTokenRequest | Object representing the token to be created
+apiInstance.issueToken(issueTokenRequest, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -381,7 +381,7 @@ apiInstance.issueToken(body, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**IssueTokenRequest**](IssueTokenRequest.md)| Object representing the token to be created | 
+ **issueTokenRequest** | [**IssueTokenRequest**](IssueTokenRequest.md)| Object representing the token to be created | 
 
 ### Return type
 
@@ -398,7 +398,7 @@ No authorization required
 
 <a name="sendToken"></a>
 # **sendToken**
-> SendTokenResponse sendToken(body)
+> SendTokenResponse sendToken(sendTokenRequest)
 
 Builds a transaction that sends an NTP1 Token
 
@@ -409,8 +409,8 @@ Builds an unsigned raw transaction that sends an NTP1 token on the Neblio blockc
 import Neblioapi from 'neblioapi';
 
 let apiInstance = new Neblioapi.NTP1Api();
-let body = new Neblioapi.SendTokenRequest(); // SendTokenRequest | Object representing the token to be sent
-apiInstance.sendToken(body, (error, data, response) => {
+let sendTokenRequest = new Neblioapi.SendTokenRequest(); // SendTokenRequest | Object representing the token to be sent
+apiInstance.sendToken(sendTokenRequest, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -423,7 +423,7 @@ apiInstance.sendToken(body, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**SendTokenRequest**](SendTokenRequest.md)| Object representing the token to be sent | 
+ **sendTokenRequest** | [**SendTokenRequest**](SendTokenRequest.md)| Object representing the token to be sent | 
 
 ### Return type
 

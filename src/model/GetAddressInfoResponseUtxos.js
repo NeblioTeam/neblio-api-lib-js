@@ -48,20 +48,20 @@ class GetAddressInfoResponseUtxos {
         if (data) {
             obj = obj || new GetAddressInfoResponseUtxos();
 
-            if (data.hasOwnProperty('scriptPubKey')) {
-                obj['scriptPubKey'] = ApiClient.convertToType(data['scriptPubKey'], Object);
-            }
-            if (data.hasOwnProperty('blocktime')) {
-                obj['blocktime'] = ApiClient.convertToType(data['blocktime'], 'Number');
-            }
             if (data.hasOwnProperty('index')) {
                 obj['index'] = ApiClient.convertToType(data['index'], 'Number');
             }
             if (data.hasOwnProperty('txid')) {
                 obj['txid'] = ApiClient.convertToType(data['txid'], 'String');
             }
-            if (data.hasOwnProperty('tokens')) {
-                obj['tokens'] = ApiClient.convertToType(data['tokens'], [GetAddressInfoResponseTokens]);
+            if (data.hasOwnProperty('blockheight')) {
+                obj['blockheight'] = ApiClient.convertToType(data['blockheight'], 'Number');
+            }
+            if (data.hasOwnProperty('blocktime')) {
+                obj['blocktime'] = ApiClient.convertToType(data['blocktime'], 'Number');
+            }
+            if (data.hasOwnProperty('scriptPubKey')) {
+                obj['scriptPubKey'] = ApiClient.convertToType(data['scriptPubKey'], Object);
             }
             if (data.hasOwnProperty('used')) {
                 obj['used'] = ApiClient.convertToType(data['used'], 'Boolean');
@@ -69,8 +69,8 @@ class GetAddressInfoResponseUtxos {
             if (data.hasOwnProperty('value')) {
                 obj['value'] = ApiClient.convertToType(data['value'], 'Number');
             }
-            if (data.hasOwnProperty('blockheight')) {
-                obj['blockheight'] = ApiClient.convertToType(data['blockheight'], 'Number');
+            if (data.hasOwnProperty('tokens')) {
+                obj['tokens'] = ApiClient.convertToType(data['tokens'], [GetAddressInfoResponseTokens]);
             }
         }
         return obj;
@@ -78,18 +78,6 @@ class GetAddressInfoResponseUtxos {
 
 
 }
-
-/**
- * Object representing the scruptPubKey of the UTXO
- * @member {Object} scriptPubKey
- */
-GetAddressInfoResponseUtxos.prototype['scriptPubKey'] = undefined;
-
-/**
- * Blocktime of the UTXO
- * @member {Number} blocktime
- */
-GetAddressInfoResponseUtxos.prototype['blocktime'] = undefined;
 
 /**
  * Index of the UTXO at this address
@@ -104,10 +92,22 @@ GetAddressInfoResponseUtxos.prototype['index'] = undefined;
 GetAddressInfoResponseUtxos.prototype['txid'] = undefined;
 
 /**
- * Array of NTP1 tokens in this UTXO.
- * @member {Array.<module:model/GetAddressInfoResponseTokens>} tokens
+ * Blockheight of the UTXO
+ * @member {Number} blockheight
  */
-GetAddressInfoResponseUtxos.prototype['tokens'] = undefined;
+GetAddressInfoResponseUtxos.prototype['blockheight'] = undefined;
+
+/**
+ * Blocktime of the UTXO
+ * @member {Number} blocktime
+ */
+GetAddressInfoResponseUtxos.prototype['blocktime'] = undefined;
+
+/**
+ * Object representing the scruptPubKey of the UTXO
+ * @member {Object} scriptPubKey
+ */
+GetAddressInfoResponseUtxos.prototype['scriptPubKey'] = undefined;
 
 /**
  * Whether the UTXO has been used
@@ -122,10 +122,10 @@ GetAddressInfoResponseUtxos.prototype['used'] = undefined;
 GetAddressInfoResponseUtxos.prototype['value'] = undefined;
 
 /**
- * Blockheight of the UTXO
- * @member {Number} blockheight
+ * Array of NTP1 tokens in this UTXO.
+ * @member {Array.<module:model/GetAddressInfoResponseTokens>} tokens
  */
-GetAddressInfoResponseUtxos.prototype['blockheight'] = undefined;
+GetAddressInfoResponseUtxos.prototype['tokens'] = undefined;
 
 
 

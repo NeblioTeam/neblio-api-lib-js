@@ -54,12 +54,6 @@
       //expect(instance).to.be.a(Neblioapi.GetTransactionInfoResponsePreviousOutput);
     });
 
-    it('should have the property addresses (base name: "addresses")', function() {
-      // uncomment below and update the code to test the property addresses
-      //var instane = new Neblioapi.GetTransactionInfoResponsePreviousOutput();
-      //expect(instance).to.be();
-    });
-
     it('should have the property asm (base name: "asm")', function() {
       // uncomment below and update the code to test the property asm
       //var instane = new Neblioapi.GetTransactionInfoResponsePreviousOutput();
@@ -72,14 +66,20 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property reqSigs (base name: "reqSigs")', function() {
+      // uncomment below and update the code to test the property reqSigs
+      //var instane = new Neblioapi.GetTransactionInfoResponsePreviousOutput();
+      //expect(instance).to.be();
+    });
+
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
       //var instane = new Neblioapi.GetTransactionInfoResponsePreviousOutput();
       //expect(instance).to.be();
     });
 
-    it('should have the property reqSigs (base name: "reqSigs")', function() {
-      // uncomment below and update the code to test the property reqSigs
+    it('should have the property addresses (base name: "addresses")', function() {
+      // uncomment below and update the code to test the property addresses
       //var instane = new Neblioapi.GetTransactionInfoResponsePreviousOutput();
       //expect(instance).to.be();
     });

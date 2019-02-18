@@ -54,30 +54,6 @@
       //expect(instance).to.be.a(Neblioapi.GetTxResponseVout);
     });
 
-    it('should have the property scriptPubKey (base name: "scriptPubKey")', function() {
-      // uncomment below and update the code to test the property scriptPubKey
-      //var instane = new Neblioapi.GetTxResponseVout();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property usedBlockheight (base name: "usedBlockheight")', function() {
-      // uncomment below and update the code to test the property usedBlockheight
-      //var instane = new Neblioapi.GetTxResponseVout();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property usedTxid (base name: "usedTxid")', function() {
-      // uncomment below and update the code to test the property usedTxid
-      //var instane = new Neblioapi.GetTxResponseVout();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property used (base name: "used")', function() {
-      // uncomment below and update the code to test the property used
-      //var instane = new Neblioapi.GetTxResponseVout();
-      //expect(instance).to.be();
-    });
-
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
       //var instane = new Neblioapi.GetTxResponseVout();
@@ -90,8 +66,32 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property scriptPubKey (base name: "scriptPubKey")', function() {
+      // uncomment below and update the code to test the property scriptPubKey
+      //var instane = new Neblioapi.GetTxResponseVout();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property used (base name: "used")', function() {
+      // uncomment below and update the code to test the property used
+      //var instane = new Neblioapi.GetTxResponseVout();
+      //expect(instance).to.be();
+    });
+
     it('should have the property blockheight (base name: "blockheight")', function() {
       // uncomment below and update the code to test the property blockheight
+      //var instane = new Neblioapi.GetTxResponseVout();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property usedBlockheight (base name: "usedBlockheight")', function() {
+      // uncomment below and update the code to test the property usedBlockheight
+      //var instane = new Neblioapi.GetTxResponseVout();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property usedTxid (base name: "usedTxid")', function() {
+      // uncomment below and update the code to test the property usedTxid
       //var instane = new Neblioapi.GetTxResponseVout();
       //expect(instance).to.be();
     });

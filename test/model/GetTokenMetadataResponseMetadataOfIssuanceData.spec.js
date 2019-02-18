@@ -54,14 +54,14 @@
       //expect(instance).to.be.a(Neblioapi.GetTokenMetadataResponseMetadataOfIssuanceData);
     });
 
-    it('should have the property userData (base name: "userData")', function() {
-      // uncomment below and update the code to test the property userData
+    it('should have the property tokenName (base name: "tokenName")', function() {
+      // uncomment below and update the code to test the property tokenName
       //var instane = new Neblioapi.GetTokenMetadataResponseMetadataOfIssuanceData();
       //expect(instance).to.be();
     });
 
-    it('should have the property tokenName (base name: "tokenName")', function() {
-      // uncomment below and update the code to test the property tokenName
+    it('should have the property issuer (base name: "issuer")', function() {
+      // uncomment below and update the code to test the property issuer
       //var instane = new Neblioapi.GetTokenMetadataResponseMetadataOfIssuanceData();
       //expect(instance).to.be();
     });
@@ -72,8 +72,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property issuer (base name: "issuer")', function() {
-      // uncomment below and update the code to test the property issuer
+    it('should have the property userData (base name: "userData")', function() {
+      // uncomment below and update the code to test the property userData
       //var instane = new Neblioapi.GetTokenMetadataResponseMetadataOfIssuanceData();
       //expect(instance).to.be();
     });

@@ -54,14 +54,14 @@
       //expect(instance).to.be.a(Neblioapi.IssueTokenRequestMetadataRulesFees);
     });
 
-    it('should have the property locked (base name: "locked")', function() {
-      // uncomment below and update the code to test the property locked
+    it('should have the property items (base name: "items")', function() {
+      // uncomment below and update the code to test the property items
       //var instane = new Neblioapi.IssueTokenRequestMetadataRulesFees();
       //expect(instance).to.be();
     });
 
-    it('should have the property items (base name: "items")', function() {
-      // uncomment below and update the code to test the property items
+    it('should have the property locked (base name: "locked")', function() {
+      // uncomment below and update the code to test the property locked
       //var instane = new Neblioapi.IssueTokenRequestMetadataRulesFees();
       //expect(instance).to.be();
     });

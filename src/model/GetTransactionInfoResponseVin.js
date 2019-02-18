@@ -50,17 +50,20 @@ class GetTransactionInfoResponseVin {
         if (data) {
             obj = obj || new GetTransactionInfoResponseVin();
 
+            if (data.hasOwnProperty('txid')) {
+                obj['txid'] = ApiClient.convertToType(data['txid'], 'String');
+            }
+            if (data.hasOwnProperty('vout')) {
+                obj['vout'] = ApiClient.convertToType(data['vout'], 'Number');
+            }
+            if (data.hasOwnProperty('scriptSig')) {
+                obj['scriptSig'] = GetTransactionInfoResponseScriptSig.constructFromObject(data['scriptSig']);
+            }
             if (data.hasOwnProperty('sequence')) {
                 obj['sequence'] = ApiClient.convertToType(data['sequence'], 'Number');
             }
             if (data.hasOwnProperty('previousOutput')) {
                 obj['previousOutput'] = GetTransactionInfoResponsePreviousOutput.constructFromObject(data['previousOutput']);
-            }
-            if (data.hasOwnProperty('scriptSig')) {
-                obj['scriptSig'] = GetTransactionInfoResponseScriptSig.constructFromObject(data['scriptSig']);
-            }
-            if (data.hasOwnProperty('txid')) {
-                obj['txid'] = ApiClient.convertToType(data['txid'], 'String');
             }
             if (data.hasOwnProperty('tokens')) {
                 obj['tokens'] = ApiClient.convertToType(data['tokens'], [GetTransactionInfoResponseTokens]);
@@ -68,15 +71,29 @@ class GetTransactionInfoResponseVin {
             if (data.hasOwnProperty('value')) {
                 obj['value'] = ApiClient.convertToType(data['value'], 'Number');
             }
-            if (data.hasOwnProperty('vout')) {
-                obj['vout'] = ApiClient.convertToType(data['vout'], 'Number');
-            }
         }
         return obj;
     }
 
 
 }
+
+/**
+ * TXID of the input
+ * @member {String} txid
+ */
+GetTransactionInfoResponseVin.prototype['txid'] = undefined;
+
+/**
+ * output index
+ * @member {Number} vout
+ */
+GetTransactionInfoResponseVin.prototype['vout'] = undefined;
+
+/**
+ * @member {module:model/GetTransactionInfoResponseScriptSig} scriptSig
+ */
+GetTransactionInfoResponseVin.prototype['scriptSig'] = undefined;
 
 /**
  * @member {Number} sequence
@@ -89,17 +106,6 @@ GetTransactionInfoResponseVin.prototype['sequence'] = undefined;
 GetTransactionInfoResponseVin.prototype['previousOutput'] = undefined;
 
 /**
- * @member {module:model/GetTransactionInfoResponseScriptSig} scriptSig
- */
-GetTransactionInfoResponseVin.prototype['scriptSig'] = undefined;
-
-/**
- * TXID of the input
- * @member {String} txid
- */
-GetTransactionInfoResponseVin.prototype['txid'] = undefined;
-
-/**
  * @member {Array.<module:model/GetTransactionInfoResponseTokens>} tokens
  */
 GetTransactionInfoResponseVin.prototype['tokens'] = undefined;
@@ -109,12 +115,6 @@ GetTransactionInfoResponseVin.prototype['tokens'] = undefined;
  * @member {Number} value
  */
 GetTransactionInfoResponseVin.prototype['value'] = undefined;
-
-/**
- * output index
- * @member {Number} vout
- */
-GetTransactionInfoResponseVin.prototype['vout'] = undefined;
 
 
 
