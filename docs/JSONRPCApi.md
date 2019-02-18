@@ -4,12 +4,12 @@ All URIs are relative to *https://ntp1node.nebl.io*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**rPC**](JSONRPCApi.md#rPC) | **POST** / | Send a JSON-RPC call to a localhost neblio-Qt or nebliod node
+[**jsonRpc**](JSONRPCApi.md#jsonRpc) | **POST** / | Send a JSON-RPC call to a localhost neblio-Qt or nebliod node
 
 
-<a name="rPC"></a>
-# **rPC**
-> RpcResponse rPC(rpcRequest)
+<a name="jsonRpc"></a>
+# **jsonRpc**
+> RpcResponse jsonRpc(rpcRequest)
 
 Send a JSON-RPC call to a localhost neblio-Qt or nebliod node
 
@@ -26,7 +26,7 @@ rpcAuth.password = 'YOUR PASSWORD';
 
 let apiInstance = new Neblioapi.JSONRPCApi();
 let rpcRequest = new Neblioapi.RpcRequest(); // RpcRequest | 
-apiInstance.rPC(rpcRequest, (error, data, response) => {
+apiInstance.jsonRpc(rpcRequest, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {

@@ -36,8 +36,8 @@ export default class JSONRPCApi {
 
 
     /**
-     * Callback function to receive the result of the rPC operation.
-     * @callback module:api/JSONRPCApi~rPCCallback
+     * Callback function to receive the result of the jsonRpc operation.
+     * @callback module:api/JSONRPCApi~jsonRpcCallback
      * @param {String} error Error message, if any.
      * @param {module:model/RpcResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -47,14 +47,14 @@ export default class JSONRPCApi {
      * Send a JSON-RPC call to a localhost neblio-Qt or nebliod node
      * Call any Neblio RPC command from the Neblio API libraries. Useful for signing transactions with a local node and other functions. Will not work from this page due to CORS restrictions. Requires a node to be running locally at 127.0.0.1 - Use port 16326 for testnet.
      * @param {module:model/RpcRequest} rpcRequest 
-     * @param {module:api/JSONRPCApi~rPCCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/JSONRPCApi~jsonRpcCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RpcResponse}
      */
-    rPC(rpcRequest, callback) {
+    jsonRpc(rpcRequest, callback) {
       let postBody = rpcRequest;
       // verify the required parameter 'rpcRequest' is set
       if (rpcRequest === undefined || rpcRequest === null) {
-        throw new Error("Missing the required parameter 'rpcRequest' when calling rPC");
+        throw new Error("Missing the required parameter 'rpcRequest' when calling jsonRpc");
       }
 
       let pathParams = {

@@ -48,10 +48,10 @@
   }
 
   describe('JSONRPCApi', function() {
-    describe('rPC', function() {
-      it('should call rPC successfully', function(done) {
-        //uncomment below and update the code to test rPC
-        //instance.rPC(function(error) {
+    describe('jsonRpc', function() {
+      it('should call jsonRpc successfully', function(done) {
+        //uncomment below and update the code to test jsonRpc
+        //instance.jsonRpc(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
