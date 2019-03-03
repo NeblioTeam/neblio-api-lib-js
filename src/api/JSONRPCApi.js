@@ -50,7 +50,8 @@ export default class JSONRPCApi {
      * @param {module:api/JSONRPCApi~jsonRpcCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RpcResponse}
      */
-    jsonRpc(rpcRequest, callback) {
+    jsonRpc(rpcRequest, opts, callback) {
+      opts = opts || {};
       let postBody = rpcRequest;
       // verify the required parameter 'rpcRequest' is set
       if (rpcRequest === undefined || rpcRequest === null) {
@@ -73,7 +74,7 @@ export default class JSONRPCApi {
       let basePaths = ['http://127.0.0.1:6326', 'http://127.0.0.1:16326'];
       let basePath = basePaths[0]; // by default use the first one in "servers" defined in OpenAPI
       if (typeof opts['_base_path_index'] !== 'undefined') {
-        if (opts['_base_path_index'] = basePaths.length) {
+        if (opts['_base_path_index']  >= basePaths.length || opts['_base_path_index'] <  0) {
           throw new Error("Invalid index " + opts['_base_path_index'] + " when selecting the host settings. Must be less than " + basePaths.length);
         }
         basePath = basePaths[opts['_base_path_index']];
