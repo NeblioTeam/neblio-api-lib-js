@@ -51,6 +51,9 @@ class GetTokenMetadataResponse {
             if (data.hasOwnProperty('tokenId')) {
                 obj['tokenId'] = ApiClient.convertToType(data['tokenId'], 'String');
             }
+            if (data.hasOwnProperty('someUtxo')) {
+                obj['someUtxo'] = ApiClient.convertToType(data['someUtxo'], 'String');
+            }
             if (data.hasOwnProperty('divisibility')) {
                 obj['divisibility'] = ApiClient.convertToType(data['divisibility'], 'Number');
             }
@@ -102,6 +105,12 @@ class GetTokenMetadataResponse {
  * @member {String} tokenId
  */
 GetTokenMetadataResponse.prototype['tokenId'] = undefined;
+
+/**
+ * Example UTXO containing this token.
+ * @member {String} someUtxo
+ */
+GetTokenMetadataResponse.prototype['someUtxo'] = undefined;
 
 /**
  * Decimal places the token is divisible to

@@ -60,6 +60,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property someUtxo (base name: "someUtxo")', function() {
+      // uncomment below and update the code to test the property someUtxo
+      //var instane = new Neblioapi.GetTokenMetadataResponse();
+      //expect(instance).to.be();
+    });
+
     it('should have the property divisibility (base name: "divisibility")', function() {
       // uncomment below and update the code to test the property divisibility
       //var instane = new Neblioapi.GetTokenMetadataResponse();
