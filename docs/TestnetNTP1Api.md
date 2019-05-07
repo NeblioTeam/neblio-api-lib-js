@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**testnetGetAddressInfo**](TestnetNTP1Api.md#testnetGetAddressInfo) | **GET** /testnet/ntp1/addressinfo/{address} | Information On a Neblio Address
 [**testnetGetTokenHolders**](TestnetNTP1Api.md#testnetGetTokenHolders) | **GET** /testnet/ntp1/stakeholders/{tokenid} | Get Addresses Holding a Token
 [**testnetGetTokenId**](TestnetNTP1Api.md#testnetGetTokenId) | **GET** /testnet/ntp1/tokenid/{tokensymbol} | Returns the tokenId representing a token
-[**testnetGetTokenMetadataOfIssuance**](TestnetNTP1Api.md#testnetGetTokenMetadataOfIssuance) | **GET** /testnet/ntp1/tokenmetadata/{tokenid} | Get Issuance Metadata of Token
+[**testnetGetTokenMetadata**](TestnetNTP1Api.md#testnetGetTokenMetadata) | **GET** /testnet/ntp1/tokenmetadata/{tokenid} | Get Metadata of Token
 [**testnetGetTokenMetadataOfUtxo**](TestnetNTP1Api.md#testnetGetTokenMetadataOfUtxo) | **GET** /testnet/ntp1/tokenmetadata/{tokenid}/{utxo} | Get UTXO Metadata of Token
 [**testnetGetTransactionInfo**](TestnetNTP1Api.md#testnetGetTransactionInfo) | **GET** /testnet/ntp1/transactioninfo/{txid} | Information On an NTP1 Transaction
 [**testnetIssueToken**](TestnetNTP1Api.md#testnetIssueToken) | **POST** /testnet/ntp1/issue | Builds a transaction that issues a new NTP1 Token
@@ -226,13 +226,13 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="testnetGetTokenMetadataOfIssuance"></a>
-# **testnetGetTokenMetadataOfIssuance**
-> GetTokenMetadataResponse testnetGetTokenMetadataOfIssuance(tokenid)
+<a name="testnetGetTokenMetadata"></a>
+# **testnetGetTokenMetadata**
+> GetTokenMetadataResponse testnetGetTokenMetadata(tokenid)
 
-Get Issuance Metadata of Token
+Get Metadata of Token
 
-Returns the metadata associated with a token at time of issuance. 
+Returns the metadata associated with a token. 
 
 ### Example
 ```javascript
@@ -240,7 +240,7 @@ import Neblioapi from 'neblioapi';
 
 let apiInstance = new Neblioapi.TestnetNTP1Api();
 let tokenid = "tokenid_example"; // String | TokenId to request metadata for
-apiInstance.testnetGetTokenMetadataOfIssuance(tokenid, (error, data, response) => {
+apiInstance.testnetGetTokenMetadata(tokenid, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {

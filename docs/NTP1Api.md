@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**getAddressInfo**](NTP1Api.md#getAddressInfo) | **GET** /ntp1/addressinfo/{address} | Information On a Neblio Address
 [**getTokenHolders**](NTP1Api.md#getTokenHolders) | **GET** /ntp1/stakeholders/{tokenid} | Get Addresses Holding a Token
 [**getTokenId**](NTP1Api.md#getTokenId) | **GET** /ntp1/tokenid/{tokensymbol} | Returns the tokenId representing a token
-[**getTokenMetadataOfIssuance**](NTP1Api.md#getTokenMetadataOfIssuance) | **GET** /ntp1/tokenmetadata/{tokenid} | Get Issuance Metadata of Token
+[**getTokenMetadata**](NTP1Api.md#getTokenMetadata) | **GET** /ntp1/tokenmetadata/{tokenid} | Get Metadata of Token
 [**getTokenMetadataOfUtxo**](NTP1Api.md#getTokenMetadataOfUtxo) | **GET** /ntp1/tokenmetadata/{tokenid}/{utxo} | Get UTXO Metadata of Token
 [**getTransactionInfo**](NTP1Api.md#getTransactionInfo) | **GET** /ntp1/transactioninfo/{txid} | Information On an NTP1 Transaction
 [**issueToken**](NTP1Api.md#issueToken) | **POST** /ntp1/issue | Builds a transaction that issues a new NTP1 Token
@@ -226,13 +226,13 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getTokenMetadataOfIssuance"></a>
-# **getTokenMetadataOfIssuance**
-> GetTokenMetadataResponse getTokenMetadataOfIssuance(tokenid)
+<a name="getTokenMetadata"></a>
+# **getTokenMetadata**
+> GetTokenMetadataResponse getTokenMetadata(tokenid)
 
-Get Issuance Metadata of Token
+Get Metadata of Token
 
-Returns the metadata associated with a token at time of issuance. 
+Returns the metadata associated with a token. 
 
 ### Example
 ```javascript
@@ -240,7 +240,7 @@ import Neblioapi from 'neblioapi';
 
 let apiInstance = new Neblioapi.NTP1Api();
 let tokenid = "tokenid_example"; // String | TokenId to request metadata for
-apiInstance.getTokenMetadataOfIssuance(tokenid, (error, data, response) => {
+apiInstance.getTokenMetadata(tokenid, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
