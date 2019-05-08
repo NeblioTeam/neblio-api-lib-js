@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new Neblioapi.SendTokenRequestTo();
+    instance = new Neblioapi.GetTokenMetadataResponseMetadataOfUtxo();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,28 +47,16 @@
       object[property] = value;
   }
 
-  describe('SendTokenRequestTo', function() {
-    it('should create an instance of SendTokenRequestTo', function() {
-      // uncomment below and update the code to test SendTokenRequestTo
-      //var instane = new Neblioapi.SendTokenRequestTo();
-      //expect(instance).to.be.a(Neblioapi.SendTokenRequestTo);
+  describe('GetTokenMetadataResponseMetadataOfUtxo', function() {
+    it('should create an instance of GetTokenMetadataResponseMetadataOfUtxo', function() {
+      // uncomment below and update the code to test GetTokenMetadataResponseMetadataOfUtxo
+      //var instane = new Neblioapi.GetTokenMetadataResponseMetadataOfUtxo();
+      //expect(instance).to.be.a(Neblioapi.GetTokenMetadataResponseMetadataOfUtxo);
     });
 
-    it('should have the property address (base name: "address")', function() {
-      // uncomment below and update the code to test the property address
-      //var instane = new Neblioapi.SendTokenRequestTo();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property amount (base name: "amount")', function() {
-      // uncomment below and update the code to test the property amount
-      //var instane = new Neblioapi.SendTokenRequestTo();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property tokenId (base name: "tokenId")', function() {
-      // uncomment below and update the code to test the property tokenId
-      //var instane = new Neblioapi.SendTokenRequestTo();
+    it('should have the property userData (base name: "userData")', function() {
+      // uncomment below and update the code to test the property userData
+      //var instane = new Neblioapi.GetTokenMetadataResponseMetadataOfUtxo();
       //expect(instance).to.be();
     });
 

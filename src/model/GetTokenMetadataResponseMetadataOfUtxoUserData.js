@@ -15,19 +15,19 @@ import ApiClient from '../ApiClient';
 import GetTokenMetadataResponseMetadataOfIssuenceDataUserDataMeta from './GetTokenMetadataResponseMetadataOfIssuenceDataUserDataMeta';
 
 /**
- * The GetTokenMetadataResponseMetadataOfIssuenceDataUserData model module.
- * @module model/GetTokenMetadataResponseMetadataOfIssuenceDataUserData
+ * The GetTokenMetadataResponseMetadataOfUtxoUserData model module.
+ * @module model/GetTokenMetadataResponseMetadataOfUtxoUserData
  * @version 1.2.1
  */
-class GetTokenMetadataResponseMetadataOfIssuenceDataUserData {
+class GetTokenMetadataResponseMetadataOfUtxoUserData {
     /**
-     * Constructs a new <code>GetTokenMetadataResponseMetadataOfIssuenceDataUserData</code>.
-     * Metadata set by user on token
-     * @alias module:model/GetTokenMetadataResponseMetadataOfIssuenceDataUserData
+     * Constructs a new <code>GetTokenMetadataResponseMetadataOfUtxoUserData</code>.
+     * Metadata set by user on token for UTXO
+     * @alias module:model/GetTokenMetadataResponseMetadataOfUtxoUserData
      */
     constructor() { 
         
-        GetTokenMetadataResponseMetadataOfIssuenceDataUserData.initialize(this);
+        GetTokenMetadataResponseMetadataOfUtxoUserData.initialize(this);
     }
 
     /**
@@ -39,15 +39,15 @@ class GetTokenMetadataResponseMetadataOfIssuenceDataUserData {
     }
 
     /**
-     * Constructs a <code>GetTokenMetadataResponseMetadataOfIssuenceDataUserData</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>GetTokenMetadataResponseMetadataOfUtxoUserData</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/GetTokenMetadataResponseMetadataOfIssuenceDataUserData} obj Optional instance to populate.
-     * @return {module:model/GetTokenMetadataResponseMetadataOfIssuenceDataUserData} The populated <code>GetTokenMetadataResponseMetadataOfIssuenceDataUserData</code> instance.
+     * @param {module:model/GetTokenMetadataResponseMetadataOfUtxoUserData} obj Optional instance to populate.
+     * @return {module:model/GetTokenMetadataResponseMetadataOfUtxoUserData} The populated <code>GetTokenMetadataResponseMetadataOfUtxoUserData</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new GetTokenMetadataResponseMetadataOfIssuenceDataUserData();
+            obj = obj || new GetTokenMetadataResponseMetadataOfUtxoUserData();
 
             if (data.hasOwnProperty('meta')) {
                 obj['meta'] = ApiClient.convertToType(data['meta'], [GetTokenMetadataResponseMetadataOfIssuenceDataUserDataMeta]);
@@ -62,12 +62,12 @@ class GetTokenMetadataResponseMetadataOfIssuenceDataUserData {
 /**
  * @member {Array.<module:model/GetTokenMetadataResponseMetadataOfIssuenceDataUserDataMeta>} meta
  */
-GetTokenMetadataResponseMetadataOfIssuenceDataUserData.prototype['meta'] = undefined;
+GetTokenMetadataResponseMetadataOfUtxoUserData.prototype['meta'] = undefined;
 
 
 
 
 
 
-export default GetTokenMetadataResponseMetadataOfIssuenceDataUserData;
+export default GetTokenMetadataResponseMetadataOfUtxoUserData;
 
