@@ -3,6 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**meta** | [**[GetTokenMetadataResponseMetadataOfIssuenceDataUserDataMeta]**](GetTokenMetadataResponseMetadataOfIssuenceDataUserDataMeta.md) |  | [optional] 
+**meta** | **[Object]** |  | [optional] 
 
 
