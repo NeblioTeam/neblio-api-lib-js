@@ -1,4 +1,4 @@
-# Neblioapi.GetTokenMetadataResponseMetadataOfIssuenceDataUserDataMeta
+# Neblioapi.GetTokenMetadataResponseMetadataOfIssuanceDataUserDataMeta
 
 ## Properties
 Name | Type | Description | Notes

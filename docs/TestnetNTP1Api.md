@@ -228,7 +228,7 @@ No authorization required
 
 <a name="testnetGetTokenMetadata"></a>
 # **testnetGetTokenMetadata**
-> GetTokenMetadataResponse testnetGetTokenMetadata(tokenid)
+> GetTokenMetadataResponse testnetGetTokenMetadata(tokenid, opts)
 
 Get Metadata of Token
 
@@ -240,7 +240,10 @@ import Neblioapi from 'neblioapi';
 
 let apiInstance = new Neblioapi.TestnetNTP1Api();
 let tokenid = "tokenid_example"; // String | TokenId to request metadata for
-apiInstance.testnetGetTokenMetadata(tokenid, (error, data, response) => {
+let opts = {
+  'verbosity': 3.4 // Number | 0 (Default) is fastest, 1 contains token stats, 2 contains token holding addresses
+};
+apiInstance.testnetGetTokenMetadata(tokenid, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -254,6 +257,7 @@ apiInstance.testnetGetTokenMetadata(tokenid, (error, data, response) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tokenid** | **String**| TokenId to request metadata for | 
+ **verbosity** | **Number**| 0 (Default) is fastest, 1 contains token stats, 2 contains token holding addresses | [optional] 
 
 ### Return type
 
@@ -270,7 +274,7 @@ No authorization required
 
 <a name="testnetGetTokenMetadataOfUtxo"></a>
 # **testnetGetTokenMetadataOfUtxo**
-> GetTokenMetadataResponse testnetGetTokenMetadataOfUtxo(tokenid, utxo)
+> GetTokenMetadataResponse testnetGetTokenMetadataOfUtxo(tokenid, utxo, opts)
 
 Get UTXO Metadata of Token
 
@@ -283,7 +287,10 @@ import Neblioapi from 'neblioapi';
 let apiInstance = new Neblioapi.TestnetNTP1Api();
 let tokenid = "tokenid_example"; // String | TokenId to request metadata for
 let utxo = "utxo_example"; // String | Specific UTXO to request metadata for
-apiInstance.testnetGetTokenMetadataOfUtxo(tokenid, utxo, (error, data, response) => {
+let opts = {
+  'verbosity': 3.4 // Number | 0 (Default) is fastest, 1 contains token stats, 2 contains token holding addresses
+};
+apiInstance.testnetGetTokenMetadataOfUtxo(tokenid, utxo, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -298,6 +305,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tokenid** | **String**| TokenId to request metadata for | 
  **utxo** | **String**| Specific UTXO to request metadata for | 
+ **verbosity** | **Number**| 0 (Default) is fastest, 1 contains token stats, 2 contains token holding addresses | [optional] 
 
 ### Return type
 
